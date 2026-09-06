@@ -74,6 +74,14 @@ before changing any copy that targets a query.
   variants of the six energy colours were darkened here for contrast on a light ground;
   if the app ever ships real light variants, replace them.
 - Type is the system rounded stack, mirroring the app's SF Pro rounded. **No webfont.**
+- **`--font-display` must not list a CJK fallback.** SF Pro Rounded carries no Cyrillic, so
+  `/ru` fell through to `Hiragino Maru Gothic ProN`, whose Cyrillic has CJK advance widths
+  and no 800 weight: the hero set thin, hugely tracked, and over five lines. `system-ui`
+  now follows the rounded faces, so Cyrillic resolves to SF Pro. The app does the same
+  thing on iOS, where `design: .rounded` also falls back to SF Pro for Cyrillic, so `/ru`
+  losing the rounded terminals is correct rather than a compromise.
+- Check `/ru` after any font change. Latin locales cannot show this class of bug: the bad
+  fallback is only reachable by glyphs the rounded faces lack.
 - `og:image:width/height` in `BaseLayout` are hardcoded to match `public/og-image.jpg`
   (1200x675). Change both together.
 - **No `favicon.svg`.** An `image/svg+xml` icon wins over PNG everywhere that supports it,
