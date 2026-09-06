@@ -1,0 +1,371 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AppStoreBadge from '../components/AppStoreBadge.astro';
+import days from '../data/lunar-days.json';
+import { APP } from '../app';
+import { pathFor } from '../site-pages';
+import { breadcrumb, faqSchema } from '../schema';
+
+// Brief (seo/ pipeline):
+//   keyword:   30 lunar days   | secondary: moon guide (ASO 18/19)
+//   cluster:   B, from seo/clusters.md
+//   intent:    informational, list/reference
+//   serp:      a dozen sites run one thin page per lunar day; none covers all 30
+//   angle:     all 30 in one scannable place, without the esoteric framing
+//   experience: minute-precision turnover split; the 18:00 diary rule; the hand
+//              authored 30x8 table (seo/experience.md)
+//   internal:  pillar `/`, German pillar `/de` (cluster A)
+//   sources:   [{ url: 'https://earthsky.org/space/years-longest-shortest-lunar-month/',
+//                supports: 'Mean lunar month 29.53059 days, 29d 12h 44m. Fetched 2026-09-07' }]
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const published = '2026-09-07';
+const updated = new Date(published).toLocaleDateString('en-GB', {
+  day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+});
+
+
+const faq = [
+  {
+    question: 'What is a lunar day?',
+    answer:
+      "A lunar day is one thirtieth of a lunar month, counted from new moon. It isn't the same length as a calendar day, and a lunar month runs about 29.5 days rather than 30, so the two drift against each other and a lunar day can turn over at any hour.",
+  },
+  {
+    question: 'Do lunar days line up with calendar days?',
+    answer:
+      "No. A lunar day usually begins partway through a calendar day. That's why one calendar date can carry two different lunar days, one before the turnover time and one after.",
+  },
+  {
+    question: 'What is the 30th lunar day good for?',
+    answer:
+      "Finishing things. It's the last day of the cycle, and our app divides the month into thirty equal slices, so it runs the same 23 hours 37 minutes as every other lunar day. In this system it top rates one activity, meditation, and cautions against nothing.",
+  },
+  {
+    question: 'How long is a lunar day?',
+    answer:
+      "About 23 hours and 37 minutes, a thirtieth of the 29.53059 day lunar month. Being 22 and a half minutes shorter than a calendar day, the turnover slips that much earlier each time, which comes to 11 hours and a quarter over a full cycle. That is why this month's turnover time and next month's rarely resemble each other.",
+  },
+  {
+    question: 'Are the lunar days the same as moon phases?',
+    answer:
+      "No. They describe different things, and our app shows both: eight moon phases and thirty lunar days. The phase is how much of the moon is lit. The lunar day is how far through the cycle you are, counted in thirtieths.",
+  },
+];
+
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The 30 lunar days, and what each one is good for',
+  author: { '@type': 'Person', name: APP.publisher },
+  datePublished: published,
+  dateModified: published,
+  mainEntityOfPage: `${site}${pathFor('lunar-days')}`,
+  publisher: { '@type': 'Person', name: APP.publisher },
+  image: `${site}/og-image.jpg`,
+  description:
+    'All 30 lunar days in one reference, each with the activities it favours and the ones it cautions against, from the rated table that ships in the New Moon iPhone app.',
+};
+
+const schemas = [
+  article,
+  faqSchema(faq),
+  breadcrumb(site, [
+    { name: 'Home', path: pathFor('') },
+    { name: 'The 30 lunar days', path: pathFor('lunar-days') },
+  ]),
+];
+---
+<BaseLayout
+  title="The 30 lunar days, and what each one is good for"
+  description="All 30 lunar days in one table: what each one favours, what it does not, and why a lunar day rarely matches a calendar day."
+  slug="lunar-days"
+  locale="en"
+  htmlLang="en"
+  structuredData={schemas}
+>
+  <Header locale="en" />
+
+  <main id="main" class="container article">
+    <p class="lbl">Reference</p>
+    <h1>The 30 lunar days, and what each one is good for</h1>
+    <p class="byline">By {APP.publisher} · Updated <time datetime={published}>{updated}</time></p>
+
+    <p class="answer">
+      A lunar month is divided into 30 lunar days, and each one traditionally favours some
+      kinds of activity over others. The first suits beginnings, creative work and
+      learning. The fifteenth, at full moon, is the most cautioned day of the cycle, and
+      22 of the 30 days caution against nothing at all.
+    </p>
+
+    <p>
+      Most pages about lunar days give you one day at a time, so answering a simple
+      question like "is the ninth a good day to launch something" means opening nine tabs.
+      This page is all thirty in one place. What you see below is the top and bottom of
+      each day, pulled from the table that ships inside our iPhone app: I hand wrote a
+      rating and a short reason for all 30 days against 8 kinds of activity, 240 in total,
+      and had the lot translated into 51 languages. The full set of four rating levels is
+      in the app. Here I've kept each day's strongest recommendations and its cautions,
+      because that's what you need to answer the question you came with.
+    </p>
+
+    <p>
+      Two things worth knowing before you read it. This is the 30 lunar day system, which
+      counts thirtieths of the cycle from new moon. It has nothing to do with the Chinese
+      lunisolar calendar, and there is no astrology or natal chart anywhere in it. Every
+      reading below comes out of traditional interpretation rather than measurement, so
+      treat it as a way to structure a month rather than as instruction.
+    </p>
+
+    <h2>Why a lunar day rarely matches a calendar day</h2>
+    <p>
+      The cycle doesn't divide into 30 whole days. Its mean is 29.53059 days, 29 days 12
+      hours and 44 minutes, and individual months vary by several hours either side
+      (<a href="https://earthsky.org/space/years-longest-shortest-lunar-month/">EarthSky</a>).
+      So lunar days and calendar days drift against each other and the turnover lands at a
+      different time every month. A given Tuesday can be the eleventh lunar day until 14:23
+      and the twelfth after it.
+    </p>
+    <p>
+      Rounding a lunar day to the nearest calendar date is the easy way to build this, and
+      it loses the transition. When I built ours I calculated the turnover to the minute and split
+      the day in the interface, so a day with a changeover shows both halves and the
+      recommendations that go with each. It makes the calendar look busier, and it's the
+      single thing I wouldn't give up, because the rounded version tells you the wrong
+      thing for part of the day.
+    </p>
+
+    <h2>All 30 lunar days</h2>
+    <p class="hint">
+      Each day lists whatever it rates highest and whatever it cautions against. Six days
+      do neither, and say so. The reading in bold belongs to a group of days rather than to
+      one. Four days get a reading of their own, the 1st, 15th, 23rd and 29th; the rest
+      share three, one for the waxing days 2 to 14, one for the waning days 16 to 22, and
+      one for the resting days 24 to 28 and the 30th.
+    </p>
+
+    <nav class="jump" aria-label="Jump to a lunar day">
+      {days.map((d) => <a href={`#day-${d.day}`}>{d.day}</a>)}
+    </nav>
+
+    <div class="days">
+      {days.map((d) => (
+        <article class="day">
+          <div class="dayhead">
+            <h3 class="n" id={`day-${d.day}`}>
+              <span class="lbl">Lunar day</span> {d.day}
+            </h3>
+            {d.showInsight && <p class="ins">{d.insight}</p>}
+          </div>
+          <div class="cols">
+            <div>
+              <p class="col-lbl good">{d.even ? 'Evenly favourable' : 'Best for'}</p>
+              {d.even ? (
+                <p class="none">
+                  Nothing is singled out. All eight activities rate favourable, and nothing
+                  is cautioned against.
+                </p>
+              ) : (
+                <ul>
+                  {d.best.map((b) => (
+                    <li style={`--c: var(--e-${b.key})`}>
+                      <strong>{b.name}.</strong> {b.note}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            {!d.even && (
+            <div>
+              <p class="col-lbl warn">Not recommended</p>
+              {d.avoid.length === 0 ? (
+                <p class="none">Nothing flagged</p>
+              ) : (
+                <ul>
+                  {d.avoid.map((a) => (
+                    <li style="--c: var(--warn)">
+                      <strong>{a.name}.</strong> {a.note}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <h2>What the pattern looks like</h2>
+    <p>
+      Having written all 240 ratings, I went back and counted them, and the shape of the
+      thing is clearer than any single day in it. Only 24 of the 240 are cautions, and they
+      fall on just eight days, in two runs: 13 to 15 around the full moon, and 24 to 28 in
+      the late waning stretch. The other 22 days flag nothing.
+    </p>
+    <p>
+      The cautions also lean hard in one direction. Business is cautioned on eight separate
+      days, more than any other activity, then sports on six and physical work on five.
+      Creative work and meditation are never cautioned once in the entire table, and
+      meditation is the single most recommended activity of the cycle, top rated on 16 of
+      the 30 days.
+    </p>
+    <p>
+      Six days, the 2nd, 6th, 9th, 10th, 17th and 21st, are flat: all eight activities rate
+      favourable, none is singled out and none is cautioned. Filter the app's month view by
+      any one activity and those six never stand out, whichever activity you pick. They are
+      the days the tradition has no strong opinion about.
+    </p>
+    <p>
+      What I take from my own counting is that the tradition spends very little time
+      telling you to stay in bed. It's wary of pushing hard, on your body or on a deal, and
+      it's in favour of making things and sitting still. Whatever you make of that, it
+      knows which way it leans.
+    </p>
+
+    <h2>Questions people ask</h2>
+    <div class="faq">
+      {faq.map((f) => (
+        <details>
+          <summary>{f.question}</summary>
+          <div><p>{f.answer}</p></div>
+        </details>
+      ))}
+    </div>
+
+    <h2>Using this as a moon guide</h2>
+    <p>
+      This table is the reference. The app is the same data applied to today: it works out
+      which lunar day you're in, splits the day at the turnover minute, and ranks all eight
+      activities for the half you're in. You can also filter a whole month by one activity
+      and see which days suit it, which is the part I use most.
+    </p>
+    <p>
+      There's a diary too, and I deliberately won't let you rate today before 18:00.
+      Yesterday is always open. A day rated at nine in the morning is a prediction, not a
+      record, and the whole point of keeping it is to check the tradition against your own
+      experience instead of taking it on faith.
+    </p>
+    <p>
+      New Moon is free on iPhone, in 51 languages, with one banner advert on the Today tab
+      that a single purchase removes. Start with
+      <a href={pathFor('')}>what the app does</a> if you haven't seen it. The product page
+      is also written in <a href={pathFor('', 'de')}>German</a>; this reference is English
+      only for now. If something in the app does not behave the way this page describes,
+      <a href={pathFor('support')}>support</a> is the place to tell me.
+    </p>
+
+    <div class="cta">
+      <AppStoreBadge label="Download on the App Store" />
+    </div>
+
+    <p class="disclaimer">
+      Activity guidance draws on traditional lunar-day interpretations and is offered for
+      reflection and planning, not as medical, psychological, or financial advice.
+    </p>
+  </main>
+
+  <Footer locale="en" />
+</BaseLayout>
+
+<style>
+  .article { max-width: var(--max-width-prose); padding-block: var(--space-2xl) var(--space-3xl); }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); padding-block: var(--space-sm) var(--space-md); }
+  .byline { color: var(--ink-3); font-size: 14px; padding-bottom: var(--space-lg); }
+  .answer {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border-left: 3px solid var(--brand);
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+  .article > p { color: var(--ink-2); padding-bottom: var(--space-md); }
+  .article h2 { font-size: 1.6rem; padding-block: var(--space-xl) var(--space-md); }
+  .hint { font-size: 15px; }
+
+  .days { display: flex; flex-direction: column; gap: var(--space-md); }
+  .day {
+    background: var(--raise);
+    border: 1px solid var(--rule-soft);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md) var(--space-lg);
+  }
+  .dayhead { display: flex; align-items: baseline; gap: var(--space-md); padding-bottom: var(--space-sm); }
+  /* The words are for the outline and for anyone landing on an anchor; the card is
+     already inside a list of thirty, so showing them would only repeat "Lunar day". */
+  .lbl {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--space-lg);
+  }
+  .jump a {
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--rule-soft);
+    border-radius: 10px;
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  .jump a:hover { color: var(--brand); border-color: var(--brand); text-decoration: none; }
+  .n {
+    scroll-margin-top: 76px;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--brand);
+    min-width: 1.7em;
+    font-variant-numeric: tabular-nums;
+  }
+  .ins { color: var(--ink); font-weight: 600; font-size: 15px; }
+  .cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-lg); }
+  .col-lbl {
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+  }
+  .col-lbl.good { color: var(--good); }
+  .col-lbl.warn { color: var(--warn); }
+  .cols ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+  .cols li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink-2);
+    border-left: 2px solid var(--c);
+    padding-left: 10px;
+  }
+  .cols strong { color: var(--ink); }
+  .none { font-size: 14px; color: var(--ink-3); }
+
+  .article .faq { padding-top: var(--space-sm); }
+  .cta { padding-block: var(--space-lg) var(--space-xl); }
+  .disclaimer {
+    color: var(--ink-3);
+    font-size: 13px;
+    line-height: 1.55;
+    border-top: 1px solid var(--rule-soft);
+    padding-top: var(--space-lg);
+  }
+  @media (max-width: 560px) {
+    .cols { grid-template-columns: minmax(0, 1fr); gap: var(--space-md); }
+  }
+</style>

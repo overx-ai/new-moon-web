@@ -1,0 +1,56 @@
+---
+import { APP } from '../app';
+import { pathFor, LOCALES, HREFLANG, type Locale } from '../site-pages';
+import { COPY } from '../copy';
+
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const t = COPY[locale];
+const year = new Date().getFullYear();
+const localeNames: Record<Locale, string> = {
+  en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', ru: 'Русский',
+};
+---
+<footer>
+  <div class="container">
+    <nav class="links" aria-label="Footer">
+      <a href={pathFor('support')}>{t.footer.support}</a>
+      <a href={pathFor('privacy')}>{t.footer.privacy}</a>
+      <a href={pathFor('terms')}>{t.footer.terms}</a>
+      <a href={`mailto:${APP.supportEmail}`}>{APP.supportEmail}</a>
+    </nav>
+    <nav class="locales" aria-label="Language">
+      {LOCALES.map((l) => (
+        <a href={pathFor('', l)} hreflang={HREFLANG[l]} aria-current={l === locale ? 'true' : undefined}>
+          {localeNames[l]}
+        </a>
+      ))}
+    </nav>
+    <p class="fine">&copy; {year} {APP.publisher}. {t.footer.rights}</p>
+    <p class="fine">{t.disclaimer}</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--rule-soft);
+    padding-block: var(--space-2xl) var(--space-3xl);
+    margin-top: var(--space-2xl);
+  }
+  .links, .locales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-md);
+  }
+  .links a { color: var(--ink); font-size: 15px; }
+  .locales a { color: var(--ink-3); font-size: 14px; }
+  .locales a[aria-current] { color: var(--brand); }
+  .fine {
+    color: var(--ink-3);
+    font-size: 13px;
+    line-height: 1.55;
+    max-width: var(--max-width-prose);
+    padding-top: var(--space-sm);
+  }
+</style>

@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import support from '../data/support.json';
+import { APP } from '../app';
+import { pathFor } from '../site-pages';
+import { breadcrumb, faqSchema } from '../schema';
+
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const schemas = [
+  faqSchema(support.faq),
+  breadcrumb(site, [
+    { name: 'Home', path: pathFor('') },
+    { name: support.pageTitle, path: pathFor('support') },
+  ]),
+];
+---
+<BaseLayout
+  title={support.pageTitle}
+  description={support.description}
+  slug="support"
+  locale="en"
+  htmlLang="en"
+  structuredData={schemas}
+>
+  <Header locale="en" />
+  <main id="main" class="container page">
+    <h1>Support</h1>
+    <p class="lead">
+      Answers to what people actually run into. If none of it covers you, write to us and a person will reply.
+    </p>
+
+    <div class="contact card">
+      <div>
+        <p class="lbl">Email us</p>
+        <p><a href={`mailto:${APP.supportEmail}`}>{APP.supportEmail}</a></p>
+      </div>
+      <div>
+        <p class="lbl">Or from inside the app</p>
+        <p>Settings, then Support, then Contact Us. It sends your app version and device model with the message.</p>
+      </div>
+    </div>
+
+    <h2>Common questions</h2>
+    <div class="faq">
+      {support.faq.map((item) => (
+        <details>
+          <summary>{item.question}</summary>
+          <div set:html={item.answer} />
+        </details>
+      ))}
+    </div>
+
+    <p class="updated">Last updated: {support.lastUpdated}</p>
+  </main>
+  <Footer locale="en" />
+</BaseLayout>
+
+<style>
+  .page { max-width: var(--max-width-prose); padding-block: var(--space-3xl); }
+  h1 { font-size: clamp(2.1rem, 5vw, 2.9rem); }
+  .lead { color: var(--ink-2); font-size: 1.1rem; padding-top: var(--space-md); }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-lg);
+    margin-block: var(--space-2xl);
+  }
+  .contact p + p { padding-top: var(--space-xs); color: var(--ink-2); font-size: 15px; }
+  h2 { font-size: 1.5rem; padding-bottom: var(--space-lg); }
+  .updated { color: var(--ink-3); font-size: 14px; padding-top: var(--space-2xl); }
+  @media (max-width: 640px) { .contact { grid-template-columns: minmax(0, 1fr); } }
+</style>

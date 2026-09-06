@@ -1,0 +1,91 @@
+---
+import '../styles/global.css';
+import { APP } from '../app';
+import { pathFor, pageFor, HREFLANG, DEFAULT_LOCALE, type Locale } from '../site-pages';
+import { websiteSchema } from '../schema';
+
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  locale?: Locale;
+  htmlLang?: string;
+  ogImage?: string;
+  structuredData?: object[];
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  slug,
+  locale = DEFAULT_LOCALE,
+  htmlLang,
+  ogImage = '/og-image.jpg',
+  structuredData = [],
+  noindex = false,
+} = Astro.props;
+
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const page = pageFor(slug);
+const canonical = `${site}${pathFor(slug, locale)}`;
+// Every home page carries its own locale-targeted title and already names the brand.
+// Suffixing it would render "New Moon: Mondkalender ... | New Moon".
+const fullTitle = slug === '' ? title : `${title} | ${APP.name}`;
+
+// hreflang only where the manifest says the page really exists in more than one locale.
+const alternates = page && page.locales.length > 1 ? page.locales : [];
+const schemas = slug === '' ? [websiteSchema(site), ...structuredData] : structuredData;
+---
+<!doctype html>
+<html lang={htmlLang ?? locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex
+      ? <meta name="robots" content="noindex, nofollow" />
+      : <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />}
+    {!noindex && <link rel="canonical" href={canonical} />}
+
+    {alternates.map((l) => (
+      <link rel="alternate" hreflang={HREFLANG[l]} href={`${site}${pathFor(slug, l)}`} />
+    ))}
+    {alternates.length > 0 && (
+      <link rel="alternate" hreflang="x-default" href={`${site}${pathFor(slug, DEFAULT_LOCALE)}`} />
+    )}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={APP.storeName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${site}${ogImage}`} />
+    <!-- Hardcoded to match public/og-image.jpg. Change both together. -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Smart App Banner. -->
+    <meta name="apple-itunes-app" content={`app-id=${APP.appStoreId}`} />
+
+    <!-- Raster icons only. An image/svg+xml icon would silently outrank every PNG. -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0a0e27" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FAFBFE" media="(prefers-color-scheme: light)" />
+
+    {schemas.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <slot />
+  </body>
+</html>

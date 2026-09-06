@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Home from '../components/Home.astro';
+import { COPY } from '../copy';
+import { appSchema } from '../schema';
+
+const t = COPY.en;
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+---
+<BaseLayout
+  title={t.meta.title}
+  description={t.meta.description}
+  slug=""
+  locale="en"
+  htmlLang={t.htmlLang}
+  structuredData={[appSchema(site)]}
+>
+  <Home locale="en" />
+</BaseLayout>

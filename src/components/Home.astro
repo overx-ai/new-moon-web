@@ -1,0 +1,209 @@
+---
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import AppStoreBadge from './AppStoreBadge.astro';
+import { APP, ENERGIES, WIDGETS, SCREENSHOTS } from '../app';
+import { pathFor, type Locale } from '../site-pages';
+import { COPY } from '../copy';
+
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const t = COPY[locale];
+const hero = SCREENSHOTS[0];
+const rest = SCREENSHOTS.slice(1);
+---
+<Header locale={locale} />
+
+<main id="main">
+  <section class="hero">
+    <div class="container grid">
+      <div class="pitch">
+        <p class="lbl">{t.hero.eyebrow}</p>
+        <h1>{t.hero.titleLines.map((line) => <span>{line}</span>)}</h1>
+        <p class="lead">{t.hero.lead}</p>
+        <div class="actions">
+          <AppStoreBadge label={t.hero.cta} />
+          <span class="note">{t.hero.ctaNote}</span>
+        </div>
+      </div>
+      <div class="shot">
+        <div class="phone">
+          <img src={hero.src} width={hero.w} height={hero.h} alt={t.screens.alts[0]} fetchpriority="high" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="features">
+    <div class="container">
+      <div class="sec-head">
+        <h2>{t.energy.heading}</h2>
+        <p>{t.energy.lead}</p>
+        {locale === 'en' && (
+          <p><a href={pathFor('lunar-days')}>See all 30 lunar days and what each one favours</a></p>
+        )}
+      </div>
+      <ul class="energies">
+        {ENERGIES.map((e, i) => (
+          <li style={`--c: var(--e-${e.key})`}>{t.energy.names[i]}</li>
+        ))}
+      </ul>
+      <div class="features">
+        {t.features.map((f) => (
+          <article class="card">
+            <h3>{f.title}</h3>
+            <p>{f.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="screens">
+    <div class="container">
+      <div class="sec-head">
+        <h2>{t.screens.heading}</h2>
+        <p>{t.screens.lead}</p>
+      </div>
+      <div class="gallery">
+        {rest.map((s, i) => (
+          <div class="phone">
+            <img src={s.src} width={s.w} height={s.h} alt={t.screens.alts[i + 1]} loading="lazy" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <div class="sec-head">
+        <h2>{t.widgets.heading}</h2>
+        <p>{t.widgets.lead}</p>
+      </div>
+      <ul class="widgets">
+        {WIDGETS.map((w) => (
+          <li class="card">
+            <p class="lbl">{w.size}</p>
+            <h3>{w.name}</h3>
+            <p>{w.what}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container two">
+      <div class="sec-head">
+        <h2>{t.languages.heading}</h2>
+        <p>{t.languages.body}</p>
+      </div>
+      <div class="sec-head">
+        <h2>{t.privacy.heading}</h2>
+        <p>{t.privacy.body}</p>
+        <p><a href={pathFor('privacy')}>{t.privacy.link}</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec close">
+    <div class="container">
+      <h2>{t.cta.heading}</h2>
+      <p>{t.cta.body}</p>
+      <AppStoreBadge label={t.cta.button} />
+    </div>
+  </section>
+</main>
+
+<Footer locale={locale} />
+
+<style>
+  .hero { padding-block: var(--space-3xl) var(--space-2xl); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3xl);
+    align-items: center;
+  }
+  .pitch { display: flex; flex-direction: column; gap: var(--space-lg); }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(2rem, 7vw, 4rem);
+    letter-spacing: -0.03em;
+  }
+  .lead { color: var(--ink-2); font-size: 1.2rem; max-width: 30em; }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+    padding-top: var(--space-xs);
+  }
+  .note { color: var(--ink-3); font-size: 14px; max-width: 12em; line-height: 1.4; }
+
+  .shot { display: flex; justify-content: center; min-width: 0; }
+  .phone {
+    background: #05070f;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: var(--shadow);
+    max-width: min(300px, 100%);
+    /* Flex and grid items default to min-width:auto, which is the image's 620px
+       intrinsic width. Without this the phone sets the page floor and the whole
+       layout overflows a 320px viewport. */
+    min-width: 0;
+  }
+  .phone img { width: 100%; }
+  .phone img { border-radius: 30px; }
+
+  .energies {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: var(--space-md);
+    list-style: none;
+    padding: 0;
+    margin: var(--space-2xl) 0 0;
+  }
+  .energies li {
+    border-top: 3px solid var(--c);
+    padding-top: 10px;
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+
+  .features, .widgets, .gallery {
+    display: grid;
+    gap: var(--space-lg);
+    margin-top: var(--space-2xl);
+    padding: 0;
+    list-style: none;
+  }
+  .features, .widgets { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); justify-items: center; }
+  .features h3, .widgets h3 { font-size: 1.2rem; padding-bottom: var(--space-sm); }
+  .features p, .widgets p { color: var(--ink-2); font-size: 15px; }
+  .widgets .lbl { padding-bottom: var(--space-xs); }
+
+  .two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3xl); }
+
+  .close { text-align: center; }
+  .close h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); }
+  .close p {
+    color: var(--ink-2);
+    max-width: 34em;
+    margin: var(--space-md) auto var(--space-lg);
+  }
+
+  @media (max-width: 480px) {
+    .gallery .phone { max-width: 100%; }
+  }
+
+  @media (max-width: 880px) {
+    .grid, .two { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xl); }
+    .features, .widgets, .gallery { grid-template-columns: minmax(0, 1fr); }
+    .energies { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .gallery .phone { max-width: 280px; }
+  }
+</style>

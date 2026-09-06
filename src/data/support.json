@@ -1,0 +1,55 @@
+{
+  "pageTitle": "Support",
+  "description": "Help with New Moon: Lunar Calendar. Removing adverts, restoring a purchase, widgets, languages, notifications and where your data lives.",
+  "lastUpdated": "September 6, 2026",
+  "faq": [
+    {
+      "question": "How do I remove the adverts?",
+      "answer": "Open <strong>Settings</strong> in the app and tap the Remove Ads row. It is a one time purchase, not a subscription, and it removes the banner from the Today tab permanently. Every other part of the app is already advert free."
+    },
+    {
+      "question": "I paid before and got a new phone. How do I get it back?",
+      "answer": "Sign in to the same Apple ID you bought it with, then open <strong>Settings</strong> and tap <strong>Restore Purchases</strong>. The purchase is tied to your Apple ID, not to an account with us, so nothing else is needed. If it does not restore, write to us and include the Apple receipt."
+    },
+    {
+      "question": "Can I get a refund?",
+      "answer": "Refunds for App Store purchases are handled by Apple, not by us. Go to <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>, sign in and choose the purchase. We have no way to issue an App Store refund ourselves."
+    },
+    {
+      "question": "Why can I only rate today's activities after 18:00?",
+      "answer": "Because the point is to rate a day you have actually had. Yesterday is always open for rating. Today unlocks at <strong>18:00</strong> local time, when there is enough of the day behind you to judge it. Before then the tab shows yesterday and tells you when to come back."
+    },
+    {
+      "question": "Why is one day in the calendar split into two colours?",
+      "answer": "Because the lunar day changed partway through it. Lunar days do not line up with calendar days: one can turn over at, say, 14:23. When that happens the app splits the cell and gives you the recommendations for both halves, labelled before and after that time. <a href=\"/lunar-days\">The 30 lunar days</a> explains why the turnover drifts, and lists what each day favours."
+    },
+    {
+      "question": "How do I add the widgets?",
+      "answer": "Touch and hold an empty area of your Home Screen until the icons wobble, tap the <strong>+</strong> in the corner, search for <strong>New Moon</strong>, then pick one of the three and add it. There is a small widget for the lunar day, a small one for the week, and a medium one that shows today's reading beside the month. They update themselves at midnight and at each lunar transition, and none of them shows adverts."
+    },
+    {
+      "question": "How do I change the language?",
+      "answer": "Open <strong>Settings</strong> in the app and choose <strong>Language</strong>. All 51 are listed by their own name. The app picks the closest match to your phone's language the first time you open it, and changes take effect immediately without a restart."
+    },
+    {
+      "question": "How do I turn the daily notification off?",
+      "answer": "Open <strong>Settings</strong> in the app and turn off Notifications, or change the time it arrives. Notifications are scheduled locally on your device. You can also turn them off for New Moon in the iOS Settings app under Notifications."
+    },
+    {
+      "question": "Where is my diary stored, and can I get it back if I delete the app?",
+      "answer": "On your device, and no. Check ins and reflections are kept locally on a rolling 90 day window. There is no account and no cloud sync, which means nobody else can read them, and it also means <strong>deleting the app deletes them permanently</strong>. There is no backup we can restore from."
+    },
+    {
+      "question": "The app asked whether it could track me. What happens if I say no?",
+      "answer": "Nothing changes in the app. That prompt controls the advertising identifier used to make the banner more relevant. Decline it and you still get every feature, every widget and every language. You can change your answer any time in iOS Settings, under Privacy &amp; Security, Tracking."
+    },
+    {
+      "question": "Are the moon phases accurate?",
+      "answer": "The astronomical figures, meaning the phase, the illumination percentage and the lunar day, are calculated on your device from an established synodic cycle model and are intended to be accurate. The activity recommendations attached to each lunar day are a different matter: they come from traditional interpretation and are offered for reflection and planning, not as medical, psychological or financial advice."
+    },
+    {
+      "question": "Something is broken. How do I report it?",
+      "answer": "Open <strong>Settings</strong>, then <strong>Contact Us</strong>, pick Bug and describe what happened. That form sends us your app version and device model, which is usually what we need. You can also email <a href=\"mailto:support@overx.ai\">support@overx.ai</a> directly."
+    }
+  ]
+}

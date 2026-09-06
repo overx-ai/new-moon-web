@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Home from '../../components/Home.astro';
+import { COPY } from '../../copy';
+import { appSchema } from '../../schema';
+import { LOCALES, DEFAULT_LOCALE, type Locale } from '../../site-pages';
+
+// English lives at / (prefixDefaultLocale: false), so only the other four get a prefix.
+export function getStaticPaths() {
+  return LOCALES.filter((l) => l !== DEFAULT_LOCALE).map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const t = COPY[locale];
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+---
+<BaseLayout
+  title={t.meta.title}
+  description={t.meta.description}
+  slug=""
+  locale={locale}
+  htmlLang={t.htmlLang}
+  structuredData={[appSchema(site)]}
+>
+  <Home locale={locale} />
+</BaseLayout>

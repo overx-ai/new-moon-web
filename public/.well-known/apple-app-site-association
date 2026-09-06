@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "26SAAF256Q.ai.overx.LunarCalendar",
+        "paths": [
+          "/",
+          "/support",
+          "/privacy",
+          "/terms"
+        ]
+      }
+    ]
+  }
+}

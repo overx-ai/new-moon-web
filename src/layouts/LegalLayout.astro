@@ -1,0 +1,99 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { breadcrumb } from '../schema';
+import { pathFor } from '../site-pages';
+
+interface Section { title: string; content: string; }
+interface Props {
+  slug: string;
+  pageTitle: string;
+  description: string;
+  lastUpdated: string;
+  summaryTitle?: string;
+  summaryText?: string;
+  sections: Section[];
+}
+
+const { slug, pageTitle, description, lastUpdated, summaryTitle, summaryText, sections } = Astro.props;
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const crumbs = breadcrumb(site, [
+  { name: 'Home', path: pathFor('') },
+  { name: pageTitle, path: pathFor(slug) },
+]);
+---
+<BaseLayout
+  title={pageTitle}
+  description={description}
+  slug={slug}
+  locale="en"
+  htmlLang="en"
+  structuredData={[crumbs]}
+>
+  <Header locale="en" />
+  <main id="main" class="container legal">
+    <h1>{pageTitle}</h1>
+    <p class="updated">Last updated: {lastUpdated}</p>
+
+    {summaryText && (
+      <aside class="summary">
+        <p class="lbl">{summaryTitle ?? 'The short version'}</p>
+        <p set:html={summaryText} />
+      </aside>
+    )}
+
+    {sections.map((s, i) => (
+      <section class="block">
+        <h2><span class="num">{String(i + 1).padStart(2, '0')}</span>{s.title}</h2>
+        <div set:html={s.content} />
+      </section>
+    ))}
+  </main>
+  <Footer locale="en" />
+</BaseLayout>
+
+<style>
+  .legal { max-width: var(--max-width-prose); padding-block: var(--space-3xl); }
+  h1 { font-size: clamp(2.1rem, 5vw, 2.9rem); }
+  .updated { color: var(--ink-3); font-size: 14px; padding-top: var(--space-sm); }
+
+  .summary {
+    background: var(--raise);
+    border: 1px solid var(--rule-soft);
+    border-left: 3px solid var(--brand);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-top: var(--space-xl);
+  }
+  .summary p + p { padding-top: var(--space-sm); color: var(--ink-2); }
+
+  .block { padding-top: var(--space-2xl); }
+  .block h2 {
+    font-size: 1.35rem;
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    padding-bottom: var(--space-md);
+  }
+  .num { color: var(--brand); font-size: 0.85em; font-variant-numeric: tabular-nums; }
+
+  .block :global(p), .block :global(li) { color: var(--ink-2); }
+  .block :global(p + p), .block :global(ul), .block :global(table) { margin-top: var(--space-md); }
+  .block :global(ul) { padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; }
+  .block :global(strong) { color: var(--ink); }
+  .block :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    display: block;
+    overflow-x: auto;
+  }
+  .block :global(th), .block :global(td) {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: top;
+  }
+  .block :global(th) { color: var(--ink); font-family: var(--font-display); }
+</style>

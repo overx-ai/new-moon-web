@@ -1,0 +1,76 @@
+---
+import MoonMark from './MoonMark.astro';
+import { APP, APP_STORE_URL } from '../app';
+import { pathFor, type Locale } from '../site-pages';
+import { COPY } from '../copy';
+
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const t = COPY[locale];
+const home = pathFor('', locale);
+---
+<header>
+  <div class="container bar">
+    <a class="brand" href={home}>
+      <MoonMark size={30} />
+      <span>{APP.name}</span>
+    </a>
+    <nav aria-label="Main">
+      <!-- Absolute, not bare fragments: both ids live on the home page only, so on any
+           other page a bare `#features` is a link to nothing. -->
+      <a href={`${home}#features`}>{t.nav.features}</a>
+      <a href={`${home}#screens`}>{t.nav.screens}</a>
+      <a href={pathFor('support')}>{t.nav.support}</a>
+      <a class="cta" href={APP_STORE_URL} rel="noopener">{t.nav.get}</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    backdrop-filter: saturate(160%) blur(12px);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding-block: 14px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 19px;
+    letter-spacing: -0.01em;
+  }
+  .brand:hover { text-decoration: none; }
+  nav { display: flex; align-items: center; gap: var(--space-lg); }
+  nav a { color: var(--ink-2); font-size: 15px; }
+  nav a:hover { color: var(--ink); text-decoration: none; }
+  /* Astro scopes `nav a` to `nav[cid] a[cid]`, specificity (0,2,2), which outranks a
+     bare `.cta[cid]` at (0,2,0). Qualify it or the pill inherits the nav's grey. */
+  nav a.cta {
+    background: var(--brand);
+    color: var(--on-brand);
+    font-family: var(--font-display);
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: var(--radius-pill);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  nav a.cta:hover { color: var(--on-brand); filter: brightness(1.06); }
+  @media (max-width: 720px) {
+    nav a:not(.cta) { display: none; }
+  }
+</style>

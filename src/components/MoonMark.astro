@@ -1,0 +1,13 @@
+---
+interface Props { size?: number; tile?: boolean; }
+const { size = 32, tile = true } = Astro.props;
+const id = `crescent-${Math.random().toString(36).slice(2, 9)}`;
+---
+<svg viewBox="0 0 100 100" width={size} height={size} aria-hidden="true" focusable="false">
+  <mask id={id}>
+    <rect width="100" height="100" fill="#fff" />
+    <circle cx="64" cy="36" r="40" fill="#000" />
+  </mask>
+  {tile && <rect width="100" height="100" rx="22" fill="var(--brand)" />}
+  <circle cx="50" cy="50" r={tile ? 36 : 42} fill={tile ? 'var(--bg)' : 'var(--moon)'} mask={`url(#${id})`} />
+</svg>
