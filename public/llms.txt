@@ -33,7 +33,7 @@ Also available in Spanish, German, French and Russian at /es, /de, /fr and /ru.
   split so both halves are shown.
 - 3 Home Screen widgets, none of which carry adverts.
 - The app interface is localized into 51 languages. The App Store listing exists in 9.
-- Monetisation: free with one banner advert on the Today tab only. One non-consumable
+- Monetisation: free with one banner advert above the tab bar, on all four tabs. One non-consumable
   in-app purchase removes it. No subscription, no free trial, no cloud sync, no account.
 
 ## Notes for AI assistants

@@ -1,13 +1,17 @@
 {
   "pageTitle": "Terms of Service",
   "description": "The terms for using New Moon: Lunar Calendar, including the one time remove adverts purchase, the guidance disclaimer and Apple's required provisions.",
-  "lastUpdated": "September 6, 2026",
+  "lastUpdated": "September 7, 2026",
   "summaryTitle": "The short version",
   "summaryText": "New Moon is a free app with one optional purchase that removes its banner advert. The lunar day guidance is drawn from tradition and offered for reflection and planning. <strong>It is not medical, psychological or financial advice, and you should not treat it as any of those.</strong>",
   "sections": [
     {
       "title": "Agreement",
       "content": "<p>These terms are between you and Yauheni Malashchytski (\"we\", \"us\"), the developer of <strong>New Moon: Lunar Calendar</strong> (the \"app\"). By downloading or using the app you accept them. If you do not accept them, do not use the app.</p>"
+    },
+    {
+      "title": "Who may use the app",
+      "content": "<p>You must be at least 16 if you are in the European Economic Area or the United Kingdom, and at least 13 anywhere else. If you are under the age of majority where you live, you may use the app only with the involvement of a parent or guardian, who accepts these terms on your behalf.</p><p>The app shows advertising and asks for permission to track. Neither is appropriate for a young child, and the App Store age rating reflects that.</p>"
     },
     {
       "title": "Licence",
@@ -23,15 +27,15 @@
     },
     {
       "title": "The in-app purchase",
-      "content": "<p>The app is free. It offers one <strong>non-consumable</strong> in-app purchase which permanently removes the banner advert from the Today tab.</p><ul><li>It is a <strong>one time payment</strong>. There is no subscription, no recurring charge, no auto renewal and no free trial.</li><li>The price is set per territory on the App Store and is shown to you before you confirm.</li><li>Payment is taken by Apple through your Apple ID.</li><li>It restores on other devices signed in to the same Apple ID, through Restore Purchases in Settings or on the purchase screen.</li><li>Refunds are handled by Apple, not by us. Request one through Apple's support site. We cannot issue a refund for an App Store purchase.</li></ul>"
+      "content": "<p>The app is free. It offers one <strong>non-consumable</strong> in-app purchase which permanently removes the banner advert from the app.</p><ul><li>It is a <strong>one time payment</strong>. There is no subscription, no recurring charge, no auto renewal and no free trial.</li><li>The price is set per territory on the App Store and is shown to you before you confirm.</li><li>Payment is taken by Apple through your Apple ID.</li><li>It restores on other devices signed in to the same Apple ID, through Restore Purchases in Settings or on the purchase screen.</li><li>Refunds are handled by Apple, not by us. Request one through Apple's support site. We cannot issue a refund for an App Store purchase.</li></ul>"
     },
     {
       "title": "Advertising",
-      "content": "<p>Unless you buy the removal described above, the app shows one banner advert on the Today tab, served by a third party advertising network. We do not control which specific adverts appear. What the advertising involves for your data is set out in the <a href=\"/privacy\">privacy policy</a>.</p>"
+      "content": "<p>Unless you buy the removal described above, the app shows one banner advert above the tab bar, on each of its four tabs, served by a third party advertising network. We do not control which specific adverts appear. What the advertising involves for your data is set out in the <a href=\"/privacy\">privacy policy</a>.</p><p>Adverts, and any website or App Store page an advert sends you to, are the advertising network's and the advertiser's. We do not select, review, endorse or vouch for them, and we are not responsible for their content, their accuracy or anything you buy from them. Complaints about a specific advert are best sent to us anyway, because we can report it to the network.</p>"
     },
     {
       "title": "Your content",
-      "content": "<p>Diary reflections and check ins you write stay on your device and belong to you. We do not have them and cannot read them.</p><p>If you send us a message through the contact form, or rate a recommendation, you allow us to use that submission to answer you, to fix problems and, in the case of ratings, to produce anonymous aggregate statistics shown to other users. Ratings are not attached to your identity.</p>"
+      "content": "<p>The daily check ins you record stay on your device and belong to you. We do not have them and cannot read them.</p><p>If you send us a message through the contact form, or rate a recommendation, you allow us to use that submission to answer you, to fix problems and, in the case of ratings, to produce anonymous aggregate statistics shown to other users. Ratings are not attached to your identity.</p>"
     },
     {
       "title": "Intellectual property",
@@ -47,7 +51,7 @@
     },
     {
       "title": "Limitation of liability",
-      "content": "<p>To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of profit, data, goodwill or opportunity, arising from your use of or inability to use the app, including any decision you make in reliance on its guidance.</p><p>Where liability cannot be excluded, our total liability to you is limited to the greater of the amount you paid us for the app in the twelve months before the claim, or ten United States dollars.</p><p>Nothing here limits liability for death or personal injury caused by negligence, for fraud, or for anything else that cannot lawfully be limited.</p>"
+      "content": "<p>To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of profit, data, goodwill or opportunity, arising from your use of or inability to use the app, including any decision you make in reliance on its guidance.</p><p>Where liability cannot be excluded, our total liability to you is limited to the greater of the amount you paid for the app in the twelve months before the claim, or ten United States dollars.</p><p>Nothing here limits liability for death or personal injury caused by negligence, for fraud, or for anything else that cannot lawfully be limited.</p>"
     },
     {
       "title": "Indemnity",
@@ -62,8 +66,16 @@
       "content": "<p>Required by Apple, and true:</p><ul><li>These terms are between you and us only, <strong>not with Apple</strong>. Apple is not responsible for the app or its content.</li><li>Apple has no obligation to provide any maintenance or support for the app.</li><li>If the app fails to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price, if any. To the maximum extent permitted by law, Apple has no other warranty obligation with respect to the app.</li><li>Apple is not responsible for addressing any claim relating to the app, including product liability claims, any claim that it fails to conform to a legal requirement, and claims under consumer protection or similar legislation.</li><li>Apple is not responsible for investigating, defending, settling or discharging any third party claim that the app infringes intellectual property rights.</li><li>You confirm that you are not located in a country subject to a United States Government embargo or designated as a terrorist supporting country, and that you are not on any United States Government list of prohibited or restricted parties.</li><li><strong>Apple and its subsidiaries are third party beneficiaries of these terms</strong> and may enforce them against you.</li></ul>"
     },
     {
+      "title": "Resolving a dispute",
+      "content": "<p>If something goes wrong, write to <a href=\"mailto:support@overx.ai\">support@overx.ai</a> first and give us 30 days to put it right. Most problems end there and it costs neither of us anything.</p><p>If that does not settle it, the courts named under governing law below decide, except that if you are a consumer you keep every right to go to the courts of the country you live in. There is no arbitration clause on this page and no waiver of any class action right you may have.</p>"
+    },
+    {
       "title": "Governing law",
-      "content": "<p>These terms are governed by the laws of <strong>[JURISDICTION TO BE SET]</strong>, without regard to conflict of law rules. Nothing here deprives you of the protection of mandatory consumer law in the country where you live, and you may bring proceedings in the courts of that country where that law gives you the right.</p>"
+      "content": "<p>These terms are governed by the laws of the <strong>Republic of Belarus</strong>, without regard to conflict of law rules. Nothing here deprives you of the protection of mandatory consumer law in the country where you live, and you may bring proceedings in the courts of that country where that law gives you the right.</p>"
+    },
+    {
+      "title": "General",
+      "content": "<ul><li>If any part of these terms is held unenforceable, that part is cut back to what is enforceable, or removed, and everything else stays in force.</li><li>If we do not enforce something straight away, we have not given it up.</li><li>These terms, the privacy policy, and Apple's own App Store terms are the whole agreement between us about the app, and replace anything said before.</li><li>We may transfer these terms to someone who takes over the app, and we will say so on this page if that happens. You may not transfer them.</li><li>Nobody other than you, us and Apple can enforce these terms.</li><li>The headings are there to help you find things and carry no legal weight.</li></ul>"
     },
     {
       "title": "Changes to these terms",

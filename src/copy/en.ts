@@ -14,7 +14,7 @@ export const en: Copy = {
     lead:
       'Every one of the 30 lunar days is good for some things and poor for others. New Moon tells you which, ranked, before you commit the day to it.',
     cta: 'Download on the App Store',
-    ctaNote: 'Free. One banner, on one tab.',
+    ctaNote: 'Free. One banner, no full screen ads.',
   },
   energy: {
     heading: 'Six kinds of energy, eight kinds of work',
@@ -62,7 +62,7 @@ export const en: Copy = {
   privacy: {
     heading: 'No account, no sign up',
     body:
-      'Moon phases, illumination and lunar days are calculated on your device. Your diary entries and check-ins stay there. The app is free and supported by a single banner on the Today tab, and a one time purchase removes it for good.',
+      'Moon phases, illumination and lunar days are calculated on your device. Your diary entries and check-ins stay there. The app is free and supported by a single banner above the tab bar, and a one time purchase removes it for good.',
     link: 'Read the privacy policy',
   },
   disclaimer:

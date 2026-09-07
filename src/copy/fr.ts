@@ -14,7 +14,7 @@ export const fr: Copy = {
     lead:
       "Chacun des 30 jours lunaires convient à certaines choses et pas à d'autres. New Moon vous dit lesquelles, classées, avant que vous n'y consacriez la journée.",
     cta: "Télécharger dans l'App Store",
-    ctaNote: 'Gratuit. Une bannière, sur un seul onglet.',
+    ctaNote: 'Gratuit. Une bannière, aucune publicité plein écran.',
   },
   energy: {
     heading: "Six énergies, huit types d'activité",
@@ -62,7 +62,7 @@ export const fr: Copy = {
   privacy: {
     heading: 'Pas de compte, pas d’inscription',
     body:
-      "Les phases, l'illumination et les jours lunaires sont calculés sur votre appareil. Vos réflexions et vos relevés y restent. L'application est gratuite et tient grâce à une seule bannière sur l'onglet Aujourd'hui, qu'un achat unique retire définitivement.",
+      "Les phases, l'illumination et les jours lunaires sont calculés sur votre appareil. Vos réflexions et vos relevés y restent. L'application est gratuite et tient grâce à une seule bannière au-dessus de la barre d'onglets, qu'un achat unique retire définitivement.",
     link: 'Lire la politique de confidentialité',
   },
   disclaimer:

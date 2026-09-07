@@ -14,7 +14,7 @@ export const es: Copy = {
     lead:
       'Cada uno de los 30 días lunares es bueno para unas cosas y malo para otras. New Moon te dice cuáles, ordenadas, antes de que dediques el día.',
     cta: 'Descargar en el App Store',
-    ctaNote: 'Gratis. Un solo banner, en una sola pestaña.',
+    ctaNote: 'Gratis. Un solo banner, sin anuncios a pantalla completa.',
   },
   energy: {
     heading: 'Seis energías, ocho tipos de actividad',
@@ -62,7 +62,7 @@ export const es: Copy = {
   privacy: {
     heading: 'Sin cuenta, sin registro',
     body:
-      'Las fases, la iluminación y los días lunares se calculan en tu dispositivo. Tus reflexiones y tus registros se quedan ahí. La app es gratis y se sostiene con un único banner en la pestaña Hoy, y una compra única lo quita para siempre.',
+      'Las fases, la iluminación y los días lunares se calculan en tu dispositivo. Tus reflexiones y tus registros se quedan ahí. La app es gratis y se sostiene con un único banner sobre la barra de pestañas, y una compra única lo quita para siempre.',
     link: 'Leer la política de privacidad',
   },
   disclaimer:

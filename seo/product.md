@@ -40,7 +40,7 @@ Last verified: 2026-09-06, against `fastlane/metadata/en-US/`, `PrivacyInfo.xcpr
 - No Chinese lunisolar or huangli calendar system. It is the 30 lunar day system.
 
 ## Monetisation
-Free, with **one banner on the Today tab only**. One non-consumable in-app purchase
+Free, with **one banner above the tab bar, on all four tabs** (changed 2026-09-07 from Today only). One non-consumable in-app purchase
 removes it permanently. RevenueCat entitlement `ad_free`. Everything else in the app is
 free, including all widgets and all 51 languages.
 
@@ -51,7 +51,7 @@ free, including all widgets and all 51 languages.
   AppLovin MAX. They are stale; the code and Info.plist keys are LevelPlay.
 - `NSPrivacyTracking` is **true**. Tracking domain `postbacks-is.com`. IDFA via ATT.
 - So: **never write "no trackers", "no ads" or "fully private".** The accurate line is
-  "no account, the diary stays on the device, one banner on one tab".
+  "no account, the diary stays on the device, one banner and nothing full screen".
 - Off-device endpoints: activity feedback, the contact form, house ads, and the ad network.
 
 ## Positioning, measured 2026-09-07

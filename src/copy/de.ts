@@ -14,7 +14,7 @@ export const de: Copy = {
     lead:
       'Jeder der 30 Mondtage taugt für manches und für anderes nicht. New Moon sagt dir wofür, sortiert, bevor du deinen Tag darauf verwendest.',
     cta: 'Im App Store laden',
-    ctaNote: 'Kostenlos. Ein Banner, auf einem Tab.',
+    ctaNote: 'Kostenlos. Ein Banner, keine Vollbildwerbung.',
   },
   energy: {
     heading: 'Sechs Energien, acht Arten von Tätigkeit',
@@ -62,7 +62,7 @@ export const de: Copy = {
   privacy: {
     heading: 'Kein Konto, keine Anmeldung',
     body:
-      'Mondphasen, Beleuchtung und Mondtage werden auf deinem Gerät berechnet. Deine Einträge und Notizen bleiben dort. Die App ist kostenlos und trägt sich über ein einziges Banner im Heute-Tab, ein einmaliger Kauf entfernt es dauerhaft.',
+      'Mondphasen, Beleuchtung und Mondtage werden auf deinem Gerät berechnet. Deine Einträge und Notizen bleiben dort. Die App ist kostenlos und trägt sich über ein einziges Banner über der Tableiste, ein einmaliger Kauf entfernt es dauerhaft.',
     link: 'Datenschutzerklärung lesen',
   },
   disclaimer:
