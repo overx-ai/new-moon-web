@@ -1,0 +1,15 @@
+---
+import LunarDays from '../../components/LunarDays.astro';
+import { pageFor, DEFAULT_LOCALE, type Locale } from '../../site-pages';
+
+// English lives at /lunar-days; every other locale the manifest lists gets its own slug.
+export function getStaticPaths() {
+  const page = pageFor('lunar-days')!;
+  return page.locales
+    .filter((l) => l !== DEFAULT_LOCALE)
+    .map((locale) => ({ params: { locale, days: page.localSlugs?.[locale] ?? page.slug } }));
+}
+
+const locale = Astro.params.locale as Locale;
+---
+<LunarDays locale={locale} />

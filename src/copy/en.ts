@@ -21,6 +21,7 @@ export const en: Copy = {
     lead:
       'Each lunar day carries an energy, and each of eight activities gets its own rating against it, from highly favourable to not recommended, with a line on why.',
     names: ['Creative', 'Physical', 'Mental', 'Spiritual', 'Balanced', 'Rest'],
+    daysLink: 'See all 30 lunar days and what each one favours',
   },
   features: [
     {

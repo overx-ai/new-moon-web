@@ -76,7 +76,7 @@ German leads on daily recommendations rather than on phases.
 | `energy tracker` | B | product-page | 15 | 23 | not checked | matches the energy-category colouring |
 | `grimoire` | D | informational | 12 | 19 | not checked | cheap, off-positioning |
 | `almanac` | B | informational | 9 | 17 | not checked | cheap |
-| `30 lunar days` | B | informational | n/a | n/a | **crowded but gapped.** `lunarium.co.uk`, `moonsuncalendar.com`, `moonphasecalendar.org`, `astrologyk.com`, `moonhoroscope.com` all rank with **one thin page per day**. Nothing covers all 30 in one scannable place. Framing is esoteric (rituals, haircuts, diet) which we must not copy | **writing** |
+| `30 lunar days` | B | informational | n/a | n/a | **crowded but gapped.** `lunarium.co.uk`, `moonsuncalendar.com`, `moonphasecalendar.org`, `astrologyk.com`, `moonhoroscope.com` all rank with **one thin page per day**. Nothing covers all 30 in one scannable place. Framing is esoteric (rituals, haircuts, diet) which we must not copy | **live at `/lunar-days`**, German version `/de/mondtage` writing |
 
 ### Contested: enter by combination, never target directly
 `calendar widget` 31/61 · `manifestation` 28/45 · `moon phases` 27/62 · `full moon calendar`
@@ -109,6 +109,25 @@ We do not compute natal charts.
 
 `günstige tage` at three competing apps is the single cheapest term in any store, and it
 describes exactly what the app does.
+
+### de web terms, SERP checked 2026-10-09 (US-only tool, see provenance)
+
+No ASO column: Astro tracks none of these, and none has a measured web volume. Do not
+quote a number for them.
+
+| keyword | cluster | intent | web SERP verdict | status |
+|---|---|---|---|---|
+| `30 mondtage` | B | definition + list | **gapped.** One all-30 page from Tibetan astrology (`tibetischeastrologie.com/mondtage`, about 25k words, tithi, Sanskrit names, deities, haircut and ritual rules), translated Russian esoterica, print calendars. Nothing plain, scannable and non-astrological | **live at `/de/mondtage`**, `/de/mondtage` |
+| `mondtage` | B | ambiguous | **polluted.** Wiktionary (Mondtag = tidal day, or the day on the moon) and Montag misspellings. Rank via `30 mondtage` and the page's definition section, not head-on | **live at `/de/mondtage`**, same page |
+| `mondkalender mondtage` | B | informational | print calendars and generic definitions; no all-30 reference | **live at `/de/mondtage`**, same page |
+| `ungünstige mondtage` | B | informational | not checked directly. A search summary attributes "9, 15, 23, 29 are the hardest days" to the translated esoteric pages; the page timed out, so it is **unverified and not on the site**. Our table cautions on none of 9, 23 or 29 | FAQ on `/de/mondtage` |
+
+**The `mondkalender` leaders do not use Mondtage at all.** Read 2026-10-09: `mondinfo.de`
+headlines "Abnehmender Mond im Sternzeichen Waage", and `mondkalender-online.de`'s FAQ says
+its rules follow the zodiac sign in the Paungger/Poppe tradition. Neither page contains
+the word Mondtag. So the German head term's *Tagesempfehlungen* come from a different
+system from ours. `/de` should keep leading on what the day favours, and `/de/mondtage` is
+where the site says which system it uses.
 
 ---
 

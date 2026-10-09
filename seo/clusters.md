@@ -30,10 +30,17 @@ pairs. Nobody in any storefront's top 25 does this.
 - **`/lunar-days`** — all 30 in one place, targeting `30 lunar days` and `moon guide`
   (18/19). The SERP has a dozen sites with one thin page per day and no single
   comprehensive one. **Written 2026-09-07.** Links out to the pillar `/` and to `/de`
-  (cluster A). Linked in from the English homepage features section; the other four home
-  pages do not link it, because the page is English only.
+  (cluster A). Linked in from the English homepage features section, `/support`, and
+  (once shipped) `/de/mondtage`.
+- **`/de/mondtage`** — the German version, targeting `30 mondtage`. **Drafted 2026-10-09**,
+  not published. Not a translation: it adds what the German SERP needs, which "Mondtag" it
+  means (not the dictionary sense, not Tibetan tithi, not the moon's zodiac sign that
+  `mondinfo.de` and `mondkalender-online.de` compute from). Shares the component and the
+  day data with `/lunar-days`; prose lives in `src/copy/lunar-days/de.ts`. Links to `/de`
+  (pillar) and `/lunar-days`; linked from the `/de` energy section and from `/lunar-days`.
 - Candidates, unwritten: `lucky days` (25/23, the best US ratio), `biorhythm` (16/13),
   `energy tracker` (15/23), and German `günstige tage` (diff 12, three competing apps).
+  ASO numbers, not web volume.
 
 ## C. Widgets (supporting, unwritten)
 

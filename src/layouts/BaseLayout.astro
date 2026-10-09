@@ -11,6 +11,7 @@ interface Props {
   locale?: Locale;
   htmlLang?: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
   structuredData?: object[];
   noindex?: boolean;
 }
@@ -22,6 +23,7 @@ const {
   locale = DEFAULT_LOCALE,
   htmlLang,
   ogImage = '/og-image.jpg',
+  ogType = 'website',
   structuredData = [],
   noindex = false,
 } = Astro.props;
@@ -56,7 +58,7 @@ const schemas = slug === '' ? [websiteSchema(site), ...structuredData] : structu
       <link rel="alternate" hreflang="x-default" href={`${site}${pathFor(slug, DEFAULT_LOCALE)}`} />
     )}
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={APP.storeName} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />

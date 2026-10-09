@@ -1,704 +1,1410 @@
-[
-  {
-    "day": 1,
-    "insight": "New beginnings and fresh starts are favored today.",
-    "showInsight": true,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "New beginnings, fresh ideas flow naturally"
-      },
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Perfect for setting intentions"
-      },
-      {
-        "key": "learning",
-        "name": "Learning",
-        "note": "Excellent retention and focus"
-      }
-    ],
-    "fav": 3,
-    "avoid": [],
-    "favCount": 3,
-    "even": false
-  },
-  {
-    "day": 2,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": true,
-    "best": [],
-    "fav": 8,
-    "avoid": [],
-    "favCount": 0,
-    "even": true
-  },
-  {
-    "day": 3,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Peak physical energy begins"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Excellent for training"
-      }
-    ],
-    "fav": 5,
-    "avoid": [],
-    "favCount": 2,
-    "even": false
-  },
-  {
-    "day": 4,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Strength and stamina peak"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Competition energy high"
-      }
-    ],
-    "fav": 3,
-    "avoid": [],
-    "favCount": 2,
-    "even": false
-  },
-  {
-    "day": 5,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Optimal physical performance"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Peak athletic performance"
-      }
-    ],
-    "fav": 6,
-    "avoid": [],
-    "favCount": 2,
-    "even": false
-  },
-  {
-    "day": 6,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [],
-    "fav": 8,
-    "avoid": [],
-    "favCount": 0,
-    "even": true
-  },
-  {
-    "day": 7,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "Creative breakthrough likely"
-      },
-      {
-        "key": "mental",
-        "name": "Mental work",
-        "note": "Clarity and insight peak"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Important decisions favorable"
-      },
-      {
-        "key": "learning",
-        "name": "Learning",
-        "note": "Breakthrough understanding"
-      }
-    ],
-    "fav": 4,
-    "avoid": [],
-    "favCount": 4,
-    "even": false
-  },
-  {
-    "day": 8,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "Peak creative expression"
-      },
-      {
-        "key": "mental",
-        "name": "Mental work",
-        "note": "Mental clarity at its best"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Major initiatives succeed"
-      },
-      {
-        "key": "learning",
-        "name": "Learning",
-        "note": "Peak learning capacity"
-      },
-      {
-        "key": "social",
-        "name": "Social",
-        "note": "Social influence strong"
-      }
-    ],
-    "fav": 3,
-    "avoid": [],
-    "favCount": 5,
-    "even": false
-  },
-  {
-    "day": 9,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [],
-    "fav": 8,
-    "avoid": [],
-    "favCount": 0,
-    "even": true
-  },
-  {
-    "day": 10,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [],
-    "fav": 8,
-    "avoid": [],
-    "favCount": 0,
-    "even": true
-  },
-  {
-    "day": 11,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "Pre-full moon creative surge"
-      },
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Powerful spiritual energy"
-      },
-      {
-        "key": "social",
-        "name": "Social",
-        "note": "Social energy peaks"
-      }
-    ],
-    "fav": 5,
-    "avoid": [],
-    "favCount": 3,
-    "even": false
-  },
-  {
-    "day": 12,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "Inspiration abundant"
-      },
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Deep spiritual connection"
-      },
-      {
-        "key": "social",
-        "name": "Social",
-        "note": "Emotional connections deep"
-      }
-    ],
-    "fav": 3,
-    "avoid": [],
-    "favCount": 3,
-    "even": false
-  },
-  {
-    "day": 13,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "Peak creative power"
-      },
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Powerful manifestation energy"
-      },
-      {
-        "key": "social",
-        "name": "Social",
-        "note": "Emotional energy high"
-      }
-    ],
-    "fav": 0,
-    "avoid": [
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Postpone important matters"
-      }
-    ],
-    "favCount": 3,
-    "even": false
-  },
-  {
-    "day": 14,
-    "insight": "Growing energy supports new initiatives and action.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "Last surge before full moon"
-      },
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Preparation for full moon"
-      }
-    ],
-    "fav": 1,
-    "avoid": [
-      {
-        "key": "mental",
-        "name": "Mental work",
-        "note": "Logic clouded by emotion"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Risk of injury increases"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Avoid commitments"
-      }
-    ],
-    "favCount": 2,
-    "even": false
-  },
-  {
-    "day": 15,
-    "insight": "Peak emotional and creative energy. Practice self-care.",
-    "showInsight": true,
-    "best": [
-      {
-        "key": "creative",
-        "name": "Creative work",
-        "note": "Maximum creative power and emotion"
-      },
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Most powerful spiritual day"
-      }
-    ],
-    "fav": 1,
-    "avoid": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Rest and recovery day"
-      },
-      {
-        "key": "mental",
-        "name": "Mental work",
-        "note": "Emotions override logic"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "High injury risk"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Postpone all major decisions"
-      },
-      {
-        "key": "learning",
-        "name": "Learning",
-        "note": "Focus impossible"
-      }
-    ],
-    "favCount": 2,
-    "even": false
-  },
-  {
-    "day": 16,
-    "insight": "Energy releasing. Focus on completion and analysis.",
-    "showInsight": true,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Reflection and gratitude"
-      }
-    ],
-    "fav": 2,
-    "avoid": [],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 17,
-    "insight": "Energy releasing. Focus on completion and analysis.",
-    "showInsight": false,
-    "best": [],
-    "fav": 8,
-    "avoid": [],
-    "favCount": 0,
-    "even": true
-  },
-  {
-    "day": 18,
-    "insight": "Energy releasing. Focus on completion and analysis.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "mental",
-        "name": "Mental work",
-        "note": "Excellent focus returns"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Decision making strong"
-      },
-      {
-        "key": "learning",
-        "name": "Learning",
-        "note": "Concentration excellent"
-      }
-    ],
-    "fav": 5,
-    "avoid": [],
-    "favCount": 3,
-    "even": false
-  },
-  {
-    "day": 19,
-    "insight": "Energy releasing. Focus on completion and analysis.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "mental",
-        "name": "Mental work",
-        "note": "Peak analytical thinking"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Major deals favorable"
-      },
-      {
-        "key": "learning",
-        "name": "Learning",
-        "note": "Complex subjects mastered"
-      }
-    ],
-    "fav": 4,
-    "avoid": [],
-    "favCount": 3,
-    "even": false
-  },
-  {
-    "day": 20,
-    "insight": "Energy releasing. Focus on completion and analysis.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "mental",
-        "name": "Mental work",
-        "note": "Problem solving peak"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Negotiations succeed"
-      },
-      {
-        "key": "learning",
-        "name": "Learning",
-        "note": "Best retention period"
-      }
-    ],
-    "fav": 4,
-    "avoid": [],
-    "favCount": 3,
-    "even": false
-  },
-  {
-    "day": 21,
-    "insight": "Energy releasing. Focus on completion and analysis.",
-    "showInsight": false,
-    "best": [],
-    "fav": 8,
-    "avoid": [],
-    "favCount": 0,
-    "even": true
-  },
-  {
-    "day": 22,
-    "insight": "Energy releasing. Focus on completion and analysis.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Inner wisdom accessible"
-      }
-    ],
-    "fav": 5,
-    "avoid": [],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 23,
-    "insight": "Time for reflection and inner wisdom.",
-    "showInsight": true,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Deep meditation state"
-      }
-    ],
-    "fav": 2,
-    "avoid": [],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 24,
-    "insight": "Time to rest, reflect, and prepare for renewal.",
-    "showInsight": true,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Release and letting go"
-      }
-    ],
-    "fav": 0,
-    "avoid": [
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Postpone new initiatives"
-      }
-    ],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 25,
-    "insight": "Time to rest, reflect, and prepare for renewal.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Cleansing practices"
-      }
-    ],
-    "fav": 0,
-    "avoid": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Rest and recovery"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Avoid intense exercise"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Avoid commitments"
-      }
-    ],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 26,
-    "insight": "Time to rest, reflect, and prepare for renewal.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Detachment practices"
-      }
-    ],
-    "fav": 0,
-    "avoid": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Minimum activity"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Rest day essential"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Tie up loose ends only"
-      }
-    ],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 27,
-    "insight": "Time to rest, reflect, and prepare for renewal.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Spiritual retreat ideal"
-      }
-    ],
-    "fav": 0,
-    "avoid": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Deep rest needed"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Complete rest"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "No new ventures"
-      },
-      {
-        "key": "social",
-        "name": "Social",
-        "note": "Retreat inward"
-      }
-    ],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 28,
-    "insight": "Time to rest, reflect, and prepare for renewal.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Emptiness and silence"
-      }
-    ],
-    "fav": 0,
-    "avoid": [
-      {
-        "key": "physical",
-        "name": "Physical work",
-        "note": "Complete stillness"
-      },
-      {
-        "key": "sports",
-        "name": "Sports",
-        "note": "Absolute rest"
-      },
-      {
-        "key": "business",
-        "name": "Business",
-        "note": "Wait for new moon"
-      },
-      {
-        "key": "social",
-        "name": "Social",
-        "note": "Solitude essential"
-      }
-    ],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 29,
-    "insight": "Prepare for renewal as the cycle completes.",
-    "showInsight": true,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Set intentions for new moon"
-      }
-    ],
-    "fav": 0,
-    "avoid": [],
-    "favCount": 1,
-    "even": false
-  },
-  {
-    "day": 30,
-    "insight": "Time to rest, reflect, and prepare for renewal.",
-    "showInsight": false,
-    "best": [
-      {
-        "key": "meditation",
-        "name": "Meditation",
-        "note": "Final preparation for rebirth"
-      }
-    ],
-    "fav": 5,
-    "avoid": [],
-    "favCount": 1,
-    "even": false
-  }
-]
+{
+  "en": [
+    {
+      "day": 1,
+      "insight": "New beginnings and fresh starts are favored today.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "New beginnings, fresh ideas flow naturally"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Perfect for setting intentions"
+        },
+        {
+          "key": "learning",
+          "name": "Learning",
+          "note": "Excellent retention and focus"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 2,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": true,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 3,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Peak physical energy begins"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Excellent for training"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 4,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Strength and stamina peak"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Competition energy high"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 5,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Optimal physical performance"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Peak athletic performance"
+        }
+      ],
+      "fav": 6,
+      "avoid": [],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 6,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 7,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "Creative breakthrough likely"
+        },
+        {
+          "key": "mental",
+          "name": "Mental work",
+          "note": "Clarity and insight peak"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Important decisions favorable"
+        },
+        {
+          "key": "learning",
+          "name": "Learning",
+          "note": "Breakthrough understanding"
+        }
+      ],
+      "fav": 4,
+      "avoid": [],
+      "favCount": 4,
+      "even": false
+    },
+    {
+      "day": 8,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "Peak creative expression"
+        },
+        {
+          "key": "mental",
+          "name": "Mental work",
+          "note": "Mental clarity at its best"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Major initiatives succeed"
+        },
+        {
+          "key": "learning",
+          "name": "Learning",
+          "note": "Peak learning capacity"
+        },
+        {
+          "key": "social",
+          "name": "Social",
+          "note": "Social influence strong"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 5,
+      "even": false
+    },
+    {
+      "day": 9,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 10,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 11,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "Pre-full moon creative surge"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Powerful spiritual energy"
+        },
+        {
+          "key": "social",
+          "name": "Social",
+          "note": "Social energy peaks"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 12,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "Inspiration abundant"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Deep spiritual connection"
+        },
+        {
+          "key": "social",
+          "name": "Social",
+          "note": "Emotional connections deep"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 13,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "Peak creative power"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Powerful manifestation energy"
+        },
+        {
+          "key": "social",
+          "name": "Social",
+          "note": "Emotional energy high"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Postpone important matters"
+        }
+      ],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 14,
+      "insight": "Growing energy supports new initiatives and action.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "Last surge before full moon"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Preparation for full moon"
+        }
+      ],
+      "fav": 1,
+      "avoid": [
+        {
+          "key": "mental",
+          "name": "Mental work",
+          "note": "Logic clouded by emotion"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Risk of injury increases"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Avoid commitments"
+        }
+      ],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 15,
+      "insight": "Peak emotional and creative energy. Practice self-care.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Creative work",
+          "note": "Maximum creative power and emotion"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Most powerful spiritual day"
+        }
+      ],
+      "fav": 1,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Rest and recovery day"
+        },
+        {
+          "key": "mental",
+          "name": "Mental work",
+          "note": "Emotions override logic"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "High injury risk"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Postpone all major decisions"
+        },
+        {
+          "key": "learning",
+          "name": "Learning",
+          "note": "Focus impossible"
+        }
+      ],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 16,
+      "insight": "Energy releasing. Focus on completion and analysis.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Reflection and gratitude"
+        }
+      ],
+      "fav": 2,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 17,
+      "insight": "Energy releasing. Focus on completion and analysis.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 18,
+      "insight": "Energy releasing. Focus on completion and analysis.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "mental",
+          "name": "Mental work",
+          "note": "Excellent focus returns"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Decision making strong"
+        },
+        {
+          "key": "learning",
+          "name": "Learning",
+          "note": "Concentration excellent"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 19,
+      "insight": "Energy releasing. Focus on completion and analysis.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "mental",
+          "name": "Mental work",
+          "note": "Peak analytical thinking"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Major deals favorable"
+        },
+        {
+          "key": "learning",
+          "name": "Learning",
+          "note": "Complex subjects mastered"
+        }
+      ],
+      "fav": 4,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 20,
+      "insight": "Energy releasing. Focus on completion and analysis.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "mental",
+          "name": "Mental work",
+          "note": "Problem solving peak"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Negotiations succeed"
+        },
+        {
+          "key": "learning",
+          "name": "Learning",
+          "note": "Best retention period"
+        }
+      ],
+      "fav": 4,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 21,
+      "insight": "Energy releasing. Focus on completion and analysis.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 22,
+      "insight": "Energy releasing. Focus on completion and analysis.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Inner wisdom accessible"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 23,
+      "insight": "Time for reflection and inner wisdom.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Deep meditation state"
+        }
+      ],
+      "fav": 2,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 24,
+      "insight": "Time to rest, reflect, and prepare for renewal.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Release and letting go"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Postpone new initiatives"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 25,
+      "insight": "Time to rest, reflect, and prepare for renewal.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Cleansing practices"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Rest and recovery"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Avoid intense exercise"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Avoid commitments"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 26,
+      "insight": "Time to rest, reflect, and prepare for renewal.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Detachment practices"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Minimum activity"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Rest day essential"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Tie up loose ends only"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 27,
+      "insight": "Time to rest, reflect, and prepare for renewal.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Spiritual retreat ideal"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Deep rest needed"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Complete rest"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "No new ventures"
+        },
+        {
+          "key": "social",
+          "name": "Social",
+          "note": "Retreat inward"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 28,
+      "insight": "Time to rest, reflect, and prepare for renewal.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Emptiness and silence"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Physical work",
+          "note": "Complete stillness"
+        },
+        {
+          "key": "sports",
+          "name": "Sports",
+          "note": "Absolute rest"
+        },
+        {
+          "key": "business",
+          "name": "Business",
+          "note": "Wait for new moon"
+        },
+        {
+          "key": "social",
+          "name": "Social",
+          "note": "Solitude essential"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 29,
+      "insight": "Prepare for renewal as the cycle completes.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Set intentions for new moon"
+        }
+      ],
+      "fav": 0,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 30,
+      "insight": "Time to rest, reflect, and prepare for renewal.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation",
+          "note": "Final preparation for rebirth"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    }
+  ],
+  "de": [
+    {
+      "day": 1,
+      "insight": "Heute ist ein guter Tag für Neuanfänge.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Neue Anfänge, frische Ideen kommen wie von selbst"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Gut, um Absichten zu setzen"
+        },
+        {
+          "key": "learning",
+          "name": "Lernen und Bildung",
+          "note": "Sehr gute Merkfähigkeit und Konzentration"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 2,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": true,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 3,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "Körperliche Energie steigt an"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Sehr gut zum Trainieren"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 4,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "Kraft und Ausdauer auf dem Höhepunkt"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Hohe Wettkampfenergie"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 5,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "Körperlich besonders leistungsfähig"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Sehr gut für sportliche Leistung"
+        }
+      ],
+      "fav": 6,
+      "avoid": [],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 6,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 7,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Möglicher kreativer Durchbruch"
+        },
+        {
+          "key": "mental",
+          "name": "Geistige Arbeit",
+          "note": "Klarheit und Intuition sind besonders stark"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Günstig für wichtige Entscheidungen"
+        },
+        {
+          "key": "learning",
+          "name": "Lernen und Bildung",
+          "note": "Gut, um Schwieriges zu verstehen"
+        }
+      ],
+      "fav": 4,
+      "avoid": [],
+      "favCount": 4,
+      "even": false
+    },
+    {
+      "day": 8,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Kreativer Ausdruck besonders stark"
+        },
+        {
+          "key": "mental",
+          "name": "Geistige Arbeit",
+          "note": "Der Kopf ist so klar wie selten"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Gut für große Vorhaben"
+        },
+        {
+          "key": "learning",
+          "name": "Lernen und Bildung",
+          "note": "Lernen fällt am leichtesten"
+        },
+        {
+          "key": "social",
+          "name": "Soziale Aktivitäten",
+          "note": "Gut, um andere zu überzeugen"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 5,
+      "even": false
+    },
+    {
+      "day": 9,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 10,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 11,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Kreativer Schub vor dem Vollmond"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Starke spirituelle Energie"
+        },
+        {
+          "key": "social",
+          "name": "Soziale Aktivitäten",
+          "note": "Sehr gesellig"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 12,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Reichlich Inspiration"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Tiefe spirituelle Verbindung"
+        },
+        {
+          "key": "social",
+          "name": "Soziale Aktivitäten",
+          "note": "Nähe zu anderen Menschen"
+        }
+      ],
+      "fav": 3,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 13,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Kreative Energie vor dem Vollmond"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Viel Kraft, um Absichten zu verwirklichen"
+        },
+        {
+          "key": "social",
+          "name": "Soziale Aktivitäten",
+          "note": "Hohe emotionale Energie"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Wichtige Angelegenheiten verschieben"
+        }
+      ],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 14,
+      "insight": "Die Energie wächst und trägt neue Vorhaben.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Letzter Schub vor dem Vollmond"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Vorbereitung auf den Vollmond"
+        }
+      ],
+      "fav": 1,
+      "avoid": [
+        {
+          "key": "mental",
+          "name": "Geistige Arbeit",
+          "note": "Gefühle trüben die Logik"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Verletzungsrisiko steigt"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Keine Verpflichtungen eingehen"
+        }
+      ],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 15,
+      "insight": "Gefühle und Kreativität auf dem Höhepunkt. Achte gut auf dich.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "creative",
+          "name": "Kreative Arbeit",
+          "note": "Kreative Kraft und Gefühle sind am stärksten"
+        },
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Spirituell besonders intensiver Tag"
+        }
+      ],
+      "fav": 1,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "Ruhe- und Erholungstag"
+        },
+        {
+          "key": "mental",
+          "name": "Geistige Arbeit",
+          "note": "Gefühle überwiegen die Logik"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Hohes Verletzungsrisiko"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Alle wichtigen Entscheidungen verschieben"
+        },
+        {
+          "key": "learning",
+          "name": "Lernen und Bildung",
+          "note": "Konzentration kaum möglich"
+        }
+      ],
+      "favCount": 2,
+      "even": false
+    },
+    {
+      "day": 16,
+      "insight": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Reflexion und Dankbarkeit"
+        }
+      ],
+      "fav": 2,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 17,
+      "insight": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 18,
+      "insight": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "mental",
+          "name": "Geistige Arbeit",
+          "note": "Die Konzentration ist voll zurück"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Gut, um Entscheidungen zu treffen"
+        },
+        {
+          "key": "learning",
+          "name": "Lernen und Bildung",
+          "note": "Hervorragende Konzentration"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 19,
+      "insight": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "mental",
+          "name": "Geistige Arbeit",
+          "note": "Gut für analytisches Denken"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Günstig für große Abschlüsse"
+        },
+        {
+          "key": "learning",
+          "name": "Lernen und Bildung",
+          "note": "Gut für schwierige Themen"
+        }
+      ],
+      "fav": 4,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 20,
+      "insight": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "mental",
+          "name": "Geistige Arbeit",
+          "note": "Probleme lassen sich jetzt am besten lösen"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Gute Zeit für Verhandlungen"
+        },
+        {
+          "key": "learning",
+          "name": "Lernen und Bildung",
+          "note": "Beste Zeit zum Einprägen"
+        }
+      ],
+      "fav": 4,
+      "avoid": [],
+      "favCount": 3,
+      "even": false
+    },
+    {
+      "day": 21,
+      "insight": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+      "showInsight": false,
+      "best": [],
+      "fav": 8,
+      "avoid": [],
+      "favCount": 0,
+      "even": true
+    },
+    {
+      "day": 22,
+      "insight": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Zugang zur inneren Weisheit"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 23,
+      "insight": "Zeit für Reflexion und innere Weisheit.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Tiefe Meditation"
+        }
+      ],
+      "fav": 2,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 24,
+      "insight": "Zeit, auszuruhen, nachzudenken und sich auf den Neubeginn vorzubereiten.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Abgeben und loslassen"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Neue Vorhaben verschieben"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 25,
+      "insight": "Zeit, auszuruhen, nachzudenken und sich auf den Neubeginn vorzubereiten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Reinigende Übungen"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "Ruhe und Erholung"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Intensive Bewegung vermeiden"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Keine Verpflichtungen eingehen"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 26,
+      "insight": "Zeit, auszuruhen, nachzudenken und sich auf den Neubeginn vorzubereiten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Übungen für inneren Abstand"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "So wenig wie möglich tun"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Ein Ruhetag ist nötig"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Nur Offenes abschließen"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 27,
+      "insight": "Zeit, auszuruhen, nachzudenken und sich auf den Neubeginn vorzubereiten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Idealer Tag für spirituellen Rückzug"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "Viel Ruhe nötig"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Ganz pausieren"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Keine neuen Projekte"
+        },
+        {
+          "key": "social",
+          "name": "Soziale Aktivitäten",
+          "note": "Rückzug nach innen"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 28,
+      "insight": "Zeit, auszuruhen, nachzudenken und sich auf den Neubeginn vorzubereiten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Leere und Stille"
+        }
+      ],
+      "fav": 0,
+      "avoid": [
+        {
+          "key": "physical",
+          "name": "Körperliche Arbeit",
+          "note": "Körperlich ganz stillhalten"
+        },
+        {
+          "key": "sports",
+          "name": "Sport und Fitness",
+          "note": "Absolute Ruhe"
+        },
+        {
+          "key": "business",
+          "name": "Geschäft und Finanzen",
+          "note": "Auf den Neumond warten"
+        },
+        {
+          "key": "social",
+          "name": "Soziale Aktivitäten",
+          "note": "Zeit für sich allein ist nötig"
+        }
+      ],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 29,
+      "insight": "Der Zyklus endet. Zeit, sich auf den Neubeginn vorzubereiten.",
+      "showInsight": true,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Absichten für den Neumond setzen"
+        }
+      ],
+      "fav": 0,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    },
+    {
+      "day": 30,
+      "insight": "Zeit, auszuruhen, nachzudenken und sich auf den Neubeginn vorzubereiten.",
+      "showInsight": false,
+      "best": [
+        {
+          "key": "meditation",
+          "name": "Meditation und Spiritualität",
+          "note": "Letzte Vorbereitung auf den Neubeginn"
+        }
+      ],
+      "fav": 5,
+      "avoid": [],
+      "favCount": 1,
+      "even": false
+    }
+  ]
+}

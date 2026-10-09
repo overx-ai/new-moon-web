@@ -21,6 +21,7 @@ export const de: Copy = {
     lead:
       'Jeder Mondtag trägt eine Energie, und jede der acht Tätigkeiten bekommt ihre eigene Bewertung, von sehr günstig bis nicht empfohlen, mit einer Zeile zur Begründung.',
     names: ['Kreativ', 'Körperlich', 'Geistig', 'Spirituell', 'Ausgeglichen', 'Ruhe'],
+    daysLink: 'Alle 30 Mondtage und wofür jeder gut ist',
   },
   features: [
     {

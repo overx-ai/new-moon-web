@@ -39,8 +39,8 @@ const rest = SCREENSHOTS.slice(1);
       <div class="sec-head">
         <h2>{t.energy.heading}</h2>
         <p>{t.energy.lead}</p>
-        {locale === 'en' && (
-          <p><a href={pathFor('lunar-days')}>See all 30 lunar days and what each one favours</a></p>
+        {t.energy.daysLink && (
+          <p><a href={pathFor('lunar-days', locale)}>{t.energy.daysLink}</a></p>
         )}
       </div>
       <ul class="energies">

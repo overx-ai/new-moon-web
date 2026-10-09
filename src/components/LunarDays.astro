@@ -1,0 +1,253 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import AppStoreBadge from './AppStoreBadge.astro';
+import DAYS from '../data/lunar-days.json';
+import { APP } from '../app';
+import { COPY } from '../copy';
+import { LUNAR_DAYS_COPY } from '../copy/lunar-days';
+import { pathFor, type Locale } from '../site-pages';
+import { breadcrumb, faqSchema } from '../schema';
+
+const SLUG = 'lunar-days';
+
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const t = LUNAR_DAYS_COPY[locale];
+const days = (DAYS as Record<string, typeof DAYS.en>)[locale];
+if (!t || !days) throw new Error(`${SLUG}: no copy or data for locale "${locale}"`);
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const updated = new Date(t.published).toLocaleDateString(t.dateLocale, {
+  day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+});
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: t.title,
+    inLanguage: COPY[locale].htmlLang,
+    author: { '@type': 'Person', name: APP.publisher },
+    datePublished: t.published,
+    dateModified: t.published,
+    mainEntityOfPage: `${site}${pathFor(SLUG, locale)}`,
+    publisher: { '@type': 'Person', name: APP.publisher },
+    image: `${site}/og-image.jpg`,
+    description: t.summary,
+  },
+  faqSchema([...t.faq.items]),
+  breadcrumb(site, [
+    { name: t.breadcrumb.home, path: pathFor('', locale) },
+    { name: t.breadcrumb.self, path: pathFor(SLUG, locale) },
+  ]),
+];
+---
+<BaseLayout
+  title={t.meta.title}
+  description={t.meta.description}
+  slug={SLUG}
+  locale={locale}
+  htmlLang={COPY[locale].htmlLang}
+  structuredData={schemas}
+  ogType="article"
+>
+  <Header locale={locale} />
+
+  <main id="main" class="container article">
+    <p class="lbl">{t.eyebrow}</p>
+    <h1>{t.title}</h1>
+    <p class="byline">{t.byline.by} {APP.publisher} · {t.byline.updated} <time datetime={t.published}>{updated}</time></p>
+
+    <p class="answer">{t.answer}</p>
+    {t.intro.map((p) => <p set:html={p} />)}
+
+    {t.before.map((s) => (
+      <Fragment>
+        <h2>{s.heading}</h2>
+        {s.body.map((p) => <p set:html={p} />)}
+      </Fragment>
+    ))}
+
+    <h2>{t.list.heading}</h2>
+    <p class="hint">{t.list.hint}</p>
+
+    <nav class="jump" aria-label={t.list.jump}>
+      {days.map((d) => <a href={`#day-${d.day}`}>{d.day}</a>)}
+    </nav>
+
+    <div class="days">
+      {days.map((d) => (
+        <article class="day">
+          <div class="dayhead">
+            <h3 class="n" id={`day-${d.day}`}>
+              <span class="lbl">{t.list.day}</span> {d.day}
+            </h3>
+            {d.showInsight && <p class="ins">{d.insight}</p>}
+          </div>
+          <div class="cols">
+            <div>
+              <p class="col-lbl good">{d.even ? t.list.even : t.list.best}</p>
+              {d.even ? (
+                <p class="none">{t.list.evenNote}</p>
+              ) : (
+                <ul>
+                  {d.best.map((b) => (
+                    <li style={`--c: var(--e-${b.key})`}>
+                      <strong>{b.name}.</strong> {b.note}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            {!d.even && (
+            <div>
+              <p class="col-lbl warn">{t.list.avoid}</p>
+              {d.avoid.length === 0 ? (
+                <p class="none">{t.list.nothing}</p>
+              ) : (
+                <ul>
+                  {d.avoid.map((a) => (
+                    <li style="--c: var(--warn)">
+                      <strong>{a.name}.</strong> {a.note}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+
+    {t.after.map((s) => (
+      <Fragment>
+        <h2>{s.heading}</h2>
+        {s.body.map((p) => <p set:html={p} />)}
+      </Fragment>
+    ))}
+
+    <h2>{t.faq.heading}</h2>
+    <div class="faq">
+      {t.faq.items.map((f) => (
+        <details>
+          <summary>{f.question}</summary>
+          <div><p>{f.answer}</p></div>
+        </details>
+      ))}
+    </div>
+
+    <h2>{t.app.heading}</h2>
+    {t.app.body.map((p) => <p set:html={p} />)}
+
+    <div class="cta">
+      <AppStoreBadge label={t.cta} />
+    </div>
+
+    <p class="disclaimer">{COPY[locale].disclaimer}</p>
+  </main>
+
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  .article { max-width: var(--max-width-prose); padding-block: var(--space-2xl) var(--space-3xl); }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); padding-block: var(--space-sm) var(--space-md); }
+  .byline { color: var(--ink-3); font-size: 14px; padding-bottom: var(--space-lg); }
+  .answer {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border-left: 3px solid var(--brand);
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+  .article > p { color: var(--ink-2); padding-bottom: var(--space-md); }
+  .article h2 { font-size: 1.6rem; padding-block: var(--space-xl) var(--space-md); }
+  .hint { font-size: 15px; }
+
+  .days { display: flex; flex-direction: column; gap: var(--space-md); }
+  .day {
+    background: var(--raise);
+    border: 1px solid var(--rule-soft);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md) var(--space-lg);
+  }
+  .dayhead { display: flex; align-items: baseline; gap: var(--space-md); padding-bottom: var(--space-sm); }
+  /* The words are for the outline and for anyone landing on an anchor; the card is
+     already inside a list of thirty, so showing them would only repeat "Lunar day". */
+  .lbl {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--space-lg);
+  }
+  .jump a {
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--rule-soft);
+    border-radius: 10px;
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  .jump a:hover { color: var(--brand); border-color: var(--brand); text-decoration: none; }
+  .n {
+    scroll-margin-top: 76px;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--brand);
+    min-width: 1.7em;
+    font-variant-numeric: tabular-nums;
+  }
+  .ins { color: var(--ink); font-weight: 600; font-size: 15px; }
+  .cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-lg); }
+  .col-lbl {
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+  }
+  .col-lbl.good { color: var(--good); }
+  .col-lbl.warn { color: var(--warn); }
+  .cols ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+  .cols li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink-2);
+    border-left: 2px solid var(--c);
+    padding-left: 10px;
+  }
+  .cols strong { color: var(--ink); }
+  .none { font-size: 14px; color: var(--ink-3); }
+
+  .article .faq { padding-top: var(--space-sm); }
+  .cta { padding-block: var(--space-lg) var(--space-xl); }
+  .disclaimer {
+    color: var(--ink-3);
+    font-size: 13px;
+    line-height: 1.55;
+    border-top: 1px solid var(--rule-soft);
+    padding-top: var(--space-lg);
+  }
+  @media (max-width: 560px) {
+    .cols { grid-template-columns: minmax(0, 1fr); gap: var(--space-md); }
+  }
+</style>

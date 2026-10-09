@@ -1,0 +1,597 @@
+{
+  "day1_creative_note": {
+    "app": "Neue Anfänge, frische Ideen fließen natürlich",
+    "site": "Neue Anfänge, frische Ideen kommen wie von selbst",
+    "why": "literal"
+  },
+  "day1_physical_note": {
+    "app": "Langsam beginnen, Momentum allmählich aufbauen",
+    "site": "Langsam anfangen, dann allmählich steigern",
+    "why": "anglicism"
+  },
+  "day1_meditation_note": {
+    "app": "Perfekt für Setzen von Absichten",
+    "site": "Gut, um Absichten zu setzen",
+    "why": "superlative"
+  },
+  "day1_business_note": {
+    "app": "Gut für Start neuer Projekte",
+    "site": "Gut, um neue Projekte zu beginnen",
+    "why": "grammar"
+  },
+  "day1_learning_note": {
+    "app": "Ausgezeichnetes Behalten und Fokus",
+    "site": "Sehr gute Merkfähigkeit und Konzentration",
+    "why": "literal"
+  },
+  "day2_physical_note": {
+    "app": "Gut für Start von Fitness-Routinen",
+    "site": "Gut, um mit regelmäßigem Training anzufangen",
+    "why": "grammar"
+  },
+  "day2_meditation_note": {
+    "app": "Nützliche Grounding-Praktiken",
+    "site": "Erdende Übungen tun gut",
+    "why": "anglicism"
+  },
+  "day2_sports_note": {
+    "app": "Energiestufen steigen",
+    "site": "Das Energieniveau steigt",
+    "why": "grammar"
+  },
+  "day2_learning_note": {
+    "app": "Neue Informationen leicht absorbieren",
+    "site": "Neues lässt sich leicht aufnehmen",
+    "why": "literal"
+  },
+  "day3_creative_note": {
+    "app": "Vorstellungskraft erhöht",
+    "site": "Lebhafte Vorstellungskraft",
+    "why": "grammar"
+  },
+  "day3_physical_note": {
+    "app": "Beginn des Spitzen körperlicher Energie",
+    "site": "Körperliche Energie steigt an",
+    "why": "grammar"
+  },
+  "day3_mental_note": {
+    "app": "Problemlösung verbessert",
+    "site": "Probleme lassen sich leichter lösen",
+    "why": "literal"
+  },
+  "day3_sports_note": {
+    "app": "Ausgezeichnet für Training",
+    "site": "Sehr gut zum Trainieren",
+    "why": "literal"
+  },
+  "day3_business_note": {
+    "app": "Kühne Aktionen ergreifen",
+    "site": "Mutig handeln",
+    "why": "literal"
+  },
+  "day4_creative_note": {
+    "app": "Fokus auf Ausführung über Ideen",
+    "site": "Lieber umsetzen als neue Ideen sammeln",
+    "why": "grammar"
+  },
+  "day4_physical_note": {
+    "app": "Spitze von Kraft und Ausdauer",
+    "site": "Kraft und Ausdauer auf dem Höhepunkt",
+    "why": "spitze"
+  },
+  "day4_meditation_note": {
+    "app": "Besser Meditation in Bewegung",
+    "site": "Meditation in Bewegung passt besser",
+    "why": "grammar"
+  },
+  "day4_business_note": {
+    "app": "Vereinbarungen zuversichtlich schließen",
+    "site": "Abschlüsse mit Zuversicht angehen",
+    "why": "literal"
+  },
+  "day4_learning_note": {
+    "app": "Hands-on-Lernen bevorzugt",
+    "site": "Am besten durch Ausprobieren lernen",
+    "why": "anglicism"
+  },
+  "day5_physical_note": {
+    "app": "Optimale körperliche Leistung",
+    "site": "Körperlich besonders leistungsfähig",
+    "why": "superlative"
+  },
+  "day5_meditation_note": {
+    "app": "Nützliche Balance-Praktiken",
+    "site": "Übungen für das Gleichgewicht tun gut",
+    "why": "anglicism"
+  },
+  "day5_sports_note": {
+    "app": "Spitze athletischer Leistung",
+    "site": "Sehr gut für sportliche Leistung",
+    "why": "spitze"
+  },
+  "day5_business_note": {
+    "app": "Risiken günstig",
+    "site": "Günstig, um etwas zu wagen",
+    "why": "literal"
+  },
+  "day5_learning_note": {
+    "app": "Informationen gut synthetisieren",
+    "site": "Gut, um Wissen zusammenzuführen",
+    "why": "literal"
+  },
+  "day6_business_note": {
+    "app": "Networking-Möglichkeiten",
+    "site": "Gelegenheiten, Kontakte zu knüpfen",
+    "why": "anglicism"
+  },
+  "day7_physical_note": {
+    "app": "Gut für Fähigkeiten verfeinern",
+    "site": "Gut, um Fertigkeiten zu verfeinern",
+    "why": "grammar"
+  },
+  "day7_mental_note": {
+    "app": "Spitze von Klarheit und Intuition",
+    "site": "Klarheit und Intuition sind besonders stark",
+    "why": "spitze"
+  },
+  "day7_meditation_note": {
+    "app": "Spirituelle Realisierungen zugänglich",
+    "site": "Spirituelle Einsichten liegen nahe",
+    "why": "literal"
+  },
+  "day7_sports_note": {
+    "app": "Technik über Kraft",
+    "site": "Technik vor Kraft",
+    "why": "literal"
+  },
+  "day7_business_note": {
+    "app": "Wichtige Entscheidungen günstig",
+    "site": "Günstig für wichtige Entscheidungen",
+    "why": "literal"
+  },
+  "day7_learning_note": {
+    "app": "Revolutionäres Verständnis",
+    "site": "Gut, um Schwieriges zu verstehen",
+    "why": "superlative"
+  },
+  "day7_social_note": {
+    "app": "Bedeutungsvolle Gespräche",
+    "site": "Gespräche, die etwas bedeuten",
+    "why": "literal"
+  },
+  "day8_creative_note": {
+    "app": "Spitze kreativen Ausdrucks",
+    "site": "Kreativer Ausdruck besonders stark",
+    "why": "spitze"
+  },
+  "day8_mental_note": {
+    "app": "Mentale Klarheit am besten",
+    "site": "Der Kopf ist so klar wie selten",
+    "why": "literal"
+  },
+  "day8_business_note": {
+    "app": "Große Initiativen erfolgreich",
+    "site": "Gut für große Vorhaben",
+    "why": "prediction"
+  },
+  "day8_learning_note": {
+    "app": "Lernkapazität auf Spitze",
+    "site": "Lernen fällt am leichtesten",
+    "why": "spitze"
+  },
+  "day8_social_note": {
+    "app": "Starker sozialer Einfluss",
+    "site": "Gut, um andere zu überzeugen",
+    "why": "literal"
+  },
+  "day9_creative_note": {
+    "app": "Kreatives Momentum aufrechterhalten",
+    "site": "Der kreative Schwung hält an",
+    "why": "anglicism"
+  },
+  "day9_mental_note": {
+    "app": "Fokus gut aufrechterhalten",
+    "site": "Die Konzentration hält",
+    "why": "literal"
+  },
+  "day9_sports_note": {
+    "app": "Konsistente Leistung",
+    "site": "Gleichmäßige Leistung",
+    "why": "anglicism"
+  },
+  "day9_business_note": {
+    "app": "An Plänen festhalten",
+    "site": "Pläne konsequent umsetzen",
+    "why": "literal"
+  },
+  "day10_physical_note": {
+    "app": "Auf Spitze aufbauen",
+    "site": "Auf den Höhepunkt hinarbeiten",
+    "why": "spitze"
+  },
+  "day10_meditation_note": {
+    "app": "Nützliche Zentrierungspraktiken",
+    "site": "Übungen für die innere Mitte tun gut",
+    "why": "literal"
+  },
+  "day10_sports_note": {
+    "app": "Vorbereitung für Wettkampf",
+    "site": "Vorbereitung auf den Wettkampf",
+    "why": "grammar"
+  },
+  "day10_business_note": {
+    "app": "Konsistenter Fortschritt",
+    "site": "Stetiger Fortschritt",
+    "why": "anglicism"
+  },
+  "day11_creative_note": {
+    "app": "Kreative Welle vor Vollmond",
+    "site": "Kreativer Schub vor dem Vollmond",
+    "why": "literal"
+  },
+  "day11_business_note": {
+    "app": "Auf Kulmination vorbereiten",
+    "site": "Auf den Höhepunkt vorbereiten",
+    "why": "literal"
+  },
+  "day11_learning_note": {
+    "app": "Lernen integrieren",
+    "site": "Gelerntes verankern",
+    "why": "literal"
+  },
+  "day11_social_note": {
+    "app": "Soziale Energie auf Spitze",
+    "site": "Sehr gesellig",
+    "why": "spitze"
+  },
+  "day12_creative_note": {
+    "app": "Inspiration reichlich",
+    "site": "Reichlich Inspiration",
+    "why": "grammar"
+  },
+  "day12_social_note": {
+    "app": "Tiefe emotionale Verbindungen",
+    "site": "Nähe zu anderen Menschen",
+    "why": "literal"
+  },
+  "day13_creative_note": {
+    "app": "Kreative Energie vor Vollmond",
+    "site": "Kreative Energie vor dem Vollmond",
+    "why": "grammar"
+  },
+  "day13_mental_note": {
+    "app": "Geist überaktiv",
+    "site": "Der Kopf ist überdreht",
+    "why": "literal"
+  },
+  "day13_meditation_note": {
+    "app": "Starke Manifestationsenergie",
+    "site": "Viel Kraft, um Absichten zu verwirklichen",
+    "why": "literal"
+  },
+  "day13_sports_note": {
+    "app": "Aktivitäten nur leicht",
+    "site": "Nur leichte Aktivitäten",
+    "why": "grammar"
+  },
+  "day13_learning_note": {
+    "app": "Unmöglich zu konzentrieren",
+    "site": "Konzentration fällt schwer",
+    "why": "grammar"
+  },
+  "day13_social_note": {
+    "app": "Emotionale Energie hoch",
+    "site": "Hohe emotionale Energie",
+    "why": "grammar"
+  },
+  "day14_creative_note": {
+    "app": "Letzte Welle vor Vollmond",
+    "site": "Letzter Schub vor dem Vollmond",
+    "why": "literal"
+  },
+  "day14_mental_note": {
+    "app": "Logik von Emotionen überschattet",
+    "site": "Gefühle trüben die Logik",
+    "why": "literal"
+  },
+  "day14_meditation_note": {
+    "app": "Vorbereitung auf Vollmond",
+    "site": "Vorbereitung auf den Vollmond",
+    "why": "grammar"
+  },
+  "day14_business_note": {
+    "app": "Verpflichtungen vermeiden",
+    "site": "Keine Verpflichtungen eingehen",
+    "why": "literal"
+  },
+  "day15_creative_note": {
+    "app": "Maximale kreative Kraft und Emotionen",
+    "site": "Kreative Kraft und Gefühle sind am stärksten",
+    "why": "literal"
+  },
+  "day15_mental_note": {
+    "app": "Emotionen übersteigen Logik",
+    "site": "Gefühle überwiegen die Logik",
+    "why": "literal"
+  },
+  "day15_meditation_note": {
+    "app": "Mächtigster spiritueller Tag",
+    "site": "Spirituell besonders intensiver Tag",
+    "why": "superlative"
+  },
+  "day15_learning_note": {
+    "app": "Fokus unmöglich",
+    "site": "Konzentration kaum möglich",
+    "why": "literal"
+  },
+  "day15_social_note": {
+    "app": "Emotionale Treffen",
+    "site": "Gefühlvolle Begegnungen",
+    "why": "literal"
+  },
+  "day16_physical_note": {
+    "app": "Graduelle Rückkehr zur Aktivität",
+    "site": "Langsam wieder aktiv werden",
+    "why": "literal"
+  },
+  "day16_sports_note": {
+    "app": "Leichte Übungen wieder aufgenommen",
+    "site": "Leichtes Training wieder aufnehmen",
+    "why": "grammar"
+  },
+  "day16_business_note": {
+    "app": "Überprüfen nicht entscheiden",
+    "site": "Prüfen, noch nicht entscheiden",
+    "why": "grammar"
+  },
+  "day18_mental_note": {
+    "app": "Fokus kehrt hervorragend zurück",
+    "site": "Die Konzentration ist voll zurück",
+    "why": "literal"
+  },
+  "day18_sports_note": {
+    "app": "Fähigkeitsentwicklung",
+    "site": "Fertigkeiten ausbauen",
+    "why": "literal"
+  },
+  "day18_business_note": {
+    "app": "Entscheidungsfindung stark",
+    "site": "Gut, um Entscheidungen zu treffen",
+    "why": "literal"
+  },
+  "day18_social_note": {
+    "app": "Professionelles Networking",
+    "site": "Berufliche Kontakte pflegen",
+    "why": "anglicism"
+  },
+  "day19_physical_note": {
+    "app": "Konsistente Leistung",
+    "site": "Gleichmäßige Energie",
+    "why": "anglicism"
+  },
+  "day19_mental_note": {
+    "app": "Spitze analytischen Denkens",
+    "site": "Gut für analytisches Denken",
+    "why": "spitze"
+  },
+  "day19_meditation_note": {
+    "app": "Mentale Klarheitsmeditation",
+    "site": "Meditation für einen klaren Kopf",
+    "why": "literal"
+  },
+  "day19_business_note": {
+    "app": "Große Vereinbarungen günstig",
+    "site": "Günstig für große Abschlüsse",
+    "why": "literal"
+  },
+  "day19_learning_note": {
+    "app": "Komplexe Themen gemeistert",
+    "site": "Gut für schwierige Themen",
+    "why": "prediction"
+  },
+  "day20_mental_note": {
+    "app": "Spitze Problemlösung",
+    "site": "Probleme lassen sich jetzt am besten lösen",
+    "why": "spitze"
+  },
+  "day20_meditation_note": {
+    "app": "Fokuspraktiken",
+    "site": "Konzentrationsübungen",
+    "why": "anglicism"
+  },
+  "day20_business_note": {
+    "app": "Vereinbarungen erfolgreich",
+    "site": "Gute Zeit für Verhandlungen",
+    "why": "prediction"
+  },
+  "day20_learning_note": {
+    "app": "Beste Retentionsperiode",
+    "site": "Beste Zeit zum Einprägen",
+    "why": "anglicism"
+  },
+  "day21_meditation_note": {
+    "app": "Grounding-Meditation",
+    "site": "Erdende Meditation",
+    "why": "anglicism"
+  },
+  "day22_creative_note": {
+    "app": "Weisheit in Kreativität",
+    "site": "Gestalten mit Weisheit",
+    "why": "literal"
+  },
+  "day22_meditation_note": {
+    "app": "Innere Weisheit zugänglich",
+    "site": "Zugang zur inneren Weisheit",
+    "why": "literal"
+  },
+  "day22_social_note": {
+    "app": "Bedeutungsvolle Austausche",
+    "site": "Gespräche mit Tiefgang",
+    "why": "grammar"
+  },
+  "day23_meditation_note": {
+    "app": "Tiefer Meditationszustand",
+    "site": "Tiefe Meditation",
+    "why": "literal"
+  },
+  "day24_meditation_note": {
+    "app": "Freisetzung und Loslassen",
+    "site": "Abgeben und loslassen",
+    "why": "literal"
+  },
+  "day24_business_note": {
+    "app": "Neue Initiativen verschieben",
+    "site": "Neue Vorhaben verschieben",
+    "why": "literal"
+  },
+  "day24_learning_note": {
+    "app": "Überprüfen nicht neues Material",
+    "site": "Wiederholen, nichts Neues anfangen",
+    "why": "grammar"
+  },
+  "day25_creative_note": {
+    "app": "Letzte Berührungen",
+    "site": "Letzter Feinschliff",
+    "why": "literal"
+  },
+  "day25_mental_note": {
+    "app": "Mentale Erschöpfung beginnt",
+    "site": "Geistige Müdigkeit setzt ein",
+    "why": "literal"
+  },
+  "day25_meditation_note": {
+    "app": "Reinigungspraktiken",
+    "site": "Reinigende Übungen",
+    "why": "literal"
+  },
+  "day25_business_note": {
+    "app": "Verpflichtungen vermeiden",
+    "site": "Keine Verpflichtungen eingehen",
+    "why": "literal"
+  },
+  "day25_social_note": {
+    "app": "Einsamkeit vorteilhaft",
+    "site": "Zeit allein tut gut",
+    "why": "literal"
+  },
+  "day26_physical_note": {
+    "app": "Minimale Aktivität",
+    "site": "So wenig wie möglich tun",
+    "why": "literal"
+  },
+  "day26_mental_note": {
+    "app": "Mentales Chaos bereinigen",
+    "site": "Im Kopf aufräumen",
+    "why": "literal"
+  },
+  "day26_meditation_note": {
+    "app": "Trennungspraktiken",
+    "site": "Übungen für inneren Abstand",
+    "why": "literal"
+  },
+  "day26_sports_note": {
+    "app": "Ruhetag notwendig",
+    "site": "Ein Ruhetag ist nötig",
+    "why": "grammar"
+  },
+  "day26_business_note": {
+    "app": "Lose Enden nur binden",
+    "site": "Nur Offenes abschließen",
+    "why": "grammar"
+  },
+  "day27_physical_note": {
+    "app": "Tiefe Ruhe notwendig",
+    "site": "Viel Ruhe nötig",
+    "why": "grammar"
+  },
+  "day27_meditation_note": {
+    "app": "Ideales spirituelles Rückzugsort",
+    "site": "Idealer Tag für spirituellen Rückzug",
+    "why": "grammar"
+  },
+  "day27_sports_note": {
+    "app": "Vollständige Ruhe",
+    "site": "Ganz pausieren",
+    "why": "literal"
+  },
+  "day27_social_note": {
+    "app": "Nach innen ziehen",
+    "site": "Rückzug nach innen",
+    "why": "grammar"
+  },
+  "day28_creative_note": {
+    "app": "Inkubationsperiode",
+    "site": "Ideen reifen lassen",
+    "why": "literal"
+  },
+  "day28_physical_note": {
+    "app": "Vollständige Unbeweglichkeit",
+    "site": "Körperlich ganz stillhalten",
+    "why": "literal"
+  },
+  "day28_business_note": {
+    "app": "Auf Neumond warten",
+    "site": "Auf den Neumond warten",
+    "why": "grammar"
+  },
+  "day28_learning_note": {
+    "app": "Wissen setzen lassen",
+    "site": "Wissen sacken lassen",
+    "why": "literal"
+  },
+  "day28_social_note": {
+    "app": "Einsamkeit notwendig",
+    "site": "Zeit für sich allein ist nötig",
+    "why": "literal"
+  },
+  "day29_meditation_note": {
+    "app": "Absichten für Neumond setzen",
+    "site": "Absichten für den Neumond setzen",
+    "why": "grammar"
+  },
+  "day29_business_note": {
+    "app": "Planungsphase nur",
+    "site": "Nur planen",
+    "why": "grammar"
+  },
+  "day30_meditation_note": {
+    "app": "Letzte Vorbereitung für Wiedergeburt",
+    "site": "Letzte Vorbereitung auf den Neubeginn",
+    "why": "literal"
+  },
+  "day30_learning_note": {
+    "app": "Aufgeregt für neues Wissen",
+    "site": "Neugierig auf neues Wissen",
+    "why": "literal"
+  },
+  "insightDay1": {
+    "app": "Neue Anfänge und frische Starts sind heute günstig.",
+    "site": "Heute ist ein guter Tag für Neuanfänge.",
+    "why": "literal"
+  },
+  "insightDay15": {
+    "app": "Spitze emotionaler und kreativer Energie. Selbstpflege praktizieren.",
+    "site": "Gefühle und Kreativität auf dem Höhepunkt. Achte gut auf dich.",
+    "why": "spitze"
+  },
+  "insightDay29": {
+    "app": "Auf Erneuerung mit Zyklusende vorbereiten.",
+    "site": "Der Zyklus endet. Zeit, sich auf den Neubeginn vorzubereiten.",
+    "why": "grammar"
+  },
+  "insightWaxingPhase": {
+    "app": "Wachsende Energie unterstützt neue Initiativen und Aktion.",
+    "site": "Die Energie wächst und trägt neue Vorhaben.",
+    "why": "literal"
+  },
+  "insightWaningPhase": {
+    "app": "Energie freigesetzt. Auf Fertigstellung und Analyse fokussieren.",
+    "site": "Die Energie lässt nach. Zeit, Dinge abzuschließen und auszuwerten.",
+    "why": "anglicism"
+  },
+  "insightRestingPhase": {
+    "app": "Zeit für Ruhe, Reflexion und Vorbereitung auf Erneuerung.",
+    "site": "Zeit, auszuruhen, nachzudenken und sich auf den Neubeginn vorzubereiten.",
+    "why": "literal"
+  }
+}

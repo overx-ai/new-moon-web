@@ -31,6 +31,20 @@ Last verified: 2026-09-06, against `fastlane/metadata/en-US/`, `PrivacyInfo.xcpr
 - Local notifications, opt in, daily at a time you pick.
 - 51 in-app languages, auto-detected on first launch, switchable without restart.
 
+## Drift note, 2026-10-09: the app's master is ahead of the submitted build
+
+Everything above describes **1.0 build 2** (`7df59e4`, submitted for review 2026-09-08),
+and the site's day data is pinned to it (`scripts/build-lunar-days.py`). The app's master
+has since added, unreleased (`d11f4f8`, 2026-09-09, changelog `[Unreleased]`):
+- **12 activity types**: the 8 above plus haircut, garden, health and money. Haircut, garden
+  and money appear in recommendations but are never offered as diary cards.
+- Calendar-only filters: Start Projects, Finish Projects, Routine Tasks.
+- A de-DE store description that already names *Haareschneiden* and *Garten*.
+
+Until a build carrying these ships, the fence below stands: no haircut or garden claims.
+When one ships, this file, the fence, `banned.md`'s gardening line and **every count** in
+`published.md`'s claims register must be redone together, from the script's output.
+
 ## The hallucination fence: features that DO NOT exist
 - **No cloud sync.** Dead strings for it survive in the catalogue. There is no sync.
 - **No subscription and no free trial.** Dead paywall strings survive for these too.
